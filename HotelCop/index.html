@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HotelCorp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
+            <a class="navbar-brand" href="#"><img src="img/icones_logo/logo.png"> HotelCorp</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
+                aria-controls="MenuBarToDevelop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuBarToDevelop">
+                <ul class="navbar-nav">
+                    <li><a class="nav-item nav-link" href="#photos">Aperçu</a></li>
+                    <li><a class="nav-item nav-link" href="#profile">Chambres</a></li>
+                    <li><a class="nav-item nav-link" href="#restaurant">Restauration</a></li>
+                    <li><a class="nav-item nav-link" href="#spa">Spa</a></li>
+                    <li><a class="nav-item nav-link" href="#map">Carte</a></li>
+                    <li><a class="nav-item nav-link" href="#events">Evénements</a></li>
+                </ul>
+                <a class="navbar-brand" href="#"><img src="img/icones_logo/flagFrench.png" style="height: 16px; width: 24px;"></a>
+                <a class="navbar-brand" href="#"><img src="img/icones_logo/flagEngland.png" style="height: 16px; width: 24px;"></a>
+            </div>
+            <div class="w-100"></div>
+            <form class="form-inline navbar-nav">
+                <input type="text" id="inputDate">
+            </form>
+            <form class="form-inline navbar-nav">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+            </form>
+        </nav>
+    </header>
+
+    <div id="margin-top"></div>
+
+    <section id="photos" class="text-center">
+        <div class="container-fluid justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" style="background-image: url('img/chambers/chambreDeluxe.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('img/chambers/suiteRoom.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('img/spa/spa1.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('img/restaurant/gastronomie1.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                        class="sr-only">Suivant</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                        class="sr-only">Précédent</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="text-center">
+        <div class="container-fluid justify-content-center">
+            <h1>NOTRE HÔTEL</h1>
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/icones_logo/logoHotelCop.png" class="rounded-circle photo" alt="" style="height: 200px; width: 200px;">
+                </div>
+                <div class="col-9">
+                    <p class="profile">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, odio eligendi, a quis iusto
+                        nesciunt velit cum beatae, magni saepe optio? Sapiente laborum aperiam mollitia, laudantium,
+                        ipsum beatae deserunt sequi, animi dolores cumque consectetur vero ipsa distinctio! Debitis
+                        cupiditate sunt excepturi hic quasi optio est alias facere numquam quam at, incidunt atque
+                        reiciendis temporibus quo molestiae animi vel dolore aliquam quas neque, cumque error? Est
+                        beatae voluptatibus explicabo ad cum expedita culpa saepe accusamus error nihil? Veritatis
+                        mollitia illo sed officiis modi, quod ratione? Commodi, explicabo necessitatibus enim neque
+                        aperiam atque reiciendis nisi quisquam voluptatum unde asperiores recusandae quasi, eligendi
+                        soluta. Dicta ea iste non, eius tenetur unde vel laboriosam necessitatibus modi ab minima
+                        impedit voluptatem quia debitis libero esse quas corrupti possimus voluptatum reprehenderit
+                        suscipit. Sint dolore nisi deserunt nemo nulla.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="notice" class="text-center">
+        <div class="container-fluid justify-content-center">
+            <h1>COMMENTAIRES CLIENTS</h1>
+            <div id="myTable" class="row col-lg-12 justify-content-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Mr X</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
+                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Aquaman</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
+                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Springsteen</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
+                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Michel Bussi</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
+                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teasers" class="text-center">
+        <div class="container-fluid justify-content-center">
+            <h1>COUP DE PROJECTEUR SUR...</h1>
+            <div class="row" id="nav-triage">
+                <div class="col-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus deserunt magni
+                    corporis facere eius iure unde vitae, autem earum, cum, tempore quos neque architecto quo expedita
+                    voluptatem quis sapiente!
+                </div>
+                <div class="col-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus deserunt magni
+                    corporis facere eius iure unde vitae, autem earum, cum, tempore quos neque architecto quo expedita
+                    voluptatem quis sapiente!
+                </div>
+                <div class="col-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus deserunt magni
+                    corporis facere eius iure unde vitae, autem earum, cum, tempore quos neque architecto quo expedita
+                    voluptatem quis sapiente!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="otherLinks" class="text-center">
+        <hr>
+        <div>
+            <a href="#">Contact</a>
+        </div>
+        <hr>
+        <div>
+            <a href="#">Recrutement</a>
+        </div>
+        <hr>
+        <div id="socialLinksWrapper" class="container-fluid justify-content-center">
+            Suivez-nous :
+            <a href="https://www.facebook.com/" class="fab fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram-square" target="_blank"></a>
+            <a href="https://www.twitter.com/" class="fab fa-twitter" target="_blank"></a>
+            <a href="https://www.messenger.com/" class="fab fa-facebook-messenger" target="_blank"></a>
+            <a href="https://www.youtube.com/" class="fab fa-youtube" target="_blank"></a>
+        </div>
+        <hr>
+    </section>
+
+    <section id="footer" class="text-center">
+        <footer>
+            . <a href="#">Mentions légales</a> . <a href="#">Conditions générales de ventes</a>
+            . <a href="#">Plan du site</a> . <a href="#">Imprimer la page</a> . <a href="#">Newsletter</a> .
+            <br>
+            © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+        </footer>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"
+        integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"
+        integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
