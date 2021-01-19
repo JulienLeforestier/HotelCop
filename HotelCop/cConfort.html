@@ -13,7 +13,9 @@
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
-            <a class="navbar-brand" href="index.html"><img src="img/icones_logo/logo.png"> HotelCorp</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
                 <span class="navbar-toggler-icon"></span>
@@ -26,18 +28,49 @@
                     <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
                     <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
+                    <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png"
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
                         style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png"
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
                         style="height: 16px; width: 24px;"></a>
             </div>
             <div class="w-100"></div>
-            <form method="post" class="form-inline navbar-nav" action="reservation.html">
-                <input type="text" id="inputDate">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
-            </form>
-            <a href="command.html" id="shoppingCart"><i class="fas fa-shopping-cart"></i> Ma commande</a>
+            <div class="container-fluid justify-content-center" id="MenuReservation">
+                <div class="row">
+                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                        <div class="col-lg-7">
+                            <label class="label">Dates : </label>
+                            <input type="text" id="inputDateFrom">
+                            <input type="text" id="inputDateTo">
+                        </div>
+                        <div class="col-lg-2">
+                            <select name="chambers" id="chambers" class="form-control" required>
+                                <option value="" selected>Chambres</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <select name="people" id="people" class="form-control" required>
+                                <option value="" selected>Personnes</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
