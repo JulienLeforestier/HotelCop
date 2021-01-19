@@ -19,3 +19,14 @@ $(function () {
         yearSuffix: ""
     });
 });   
+
+/*****  effet toggle page chambres.html */
+function fClassique(){
+var classique = document.getElementById("idClasImg");
+if(classique.style.display === "none"){
+    this.style.display ="block";
+}
+else{
+    classique.style.display = "none";
+}
+}
