@@ -20,6 +20,14 @@ body
 	margin: auto; 
 }
 
+.nav-link{
+	color: white;
+}
+
+#shoppingCart{
+	color: white;
+}
+
 #margin-top{
 	margin-top: 130px;
 }
@@ -40,6 +48,10 @@ body
 	min-height: 350px;
 	background: no-repeat center center scroll;
 	background-size: cover;
+}
+
+.caption{
+	color: white;
 }
 
 .card-body
