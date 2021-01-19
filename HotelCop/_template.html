@@ -5,33 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Template</title>
-    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
-            <a class="navbar-brand" href="#"><img src="img/logo.png"> HotelCorp</a>
+            <a class="navbar-brand" href="index.html"><img src="img/icones_logo/logo.png"> HotelCorp</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="MenuBarToDevelop">
                 <ul class="navbar-nav">
-                    <li><a class="nav-item nav-link" href="#photos">Aperçu</a></li>
-                    <li><a class="nav-item nav-link" href="#profile">Chambres</a></li>
-                    <li><a class="nav-item nav-link" href="#restaurant">Restauration</a></li>
-                    <li><a class="nav-item nav-link" href="#spa">Spa</a></li>
-                    <li><a class="nav-item nav-link" href="#map">Carte</a></li>
-                    <li><a class="nav-item nav-link" href="#events">Evénements</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Aperçu</a></li>
+                    <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
+                    <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
+                    <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
+                    <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
+                    <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
                 </ul>
-                <a class="navbar-brand" href="#"><img src="img/flag_french.png" style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href="#"><img src="img/flag_england.png" style="height: 16px; width: 24px;"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png"
+                        style="height: 16px; width: 24px;"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png"
+                        style="height: 16px; width: 24px;"></a>
             </div>
             <div class="w-100"></div>
-            <form class="form-inline navbar-nav">
+            <form method="post" class="form-inline navbar-nav" action="reservation.html">
+                <input type="text" id="inputDate">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
             </form>
         </nav>
@@ -40,13 +43,15 @@
     <div id="margin-top"></div>
 
     <section>
-        
+
     </section>
 
     <section id="footer" class="text-center">
         <footer>
-            . <a href="#">Mentions légales</a> . <a href="#">Conditions générales de ventes</a>
-            . <a href="#">Plan du site</a> . <a href="#">Imprimer la page</a> . <a href="#">Newsletter</a> .
+            . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
+                générales de ventes</a>
+            . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
+                href="newsletter.html">Newsletter</a> .
             <br>
             © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
         </footer>
