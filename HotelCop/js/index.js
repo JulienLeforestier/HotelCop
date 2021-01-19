@@ -23,10 +23,19 @@ $(function () {
 /*****  effet toggle page chambres.html */
 function fClassique(){
 var classique = document.getElementById("idClasImg");
-if(classique.style.display === "none"){
-    this.style.display ="block";
+if(classique.style.display === "block"){
+    classique.style.display ="none";
 }
 else{
-    classique.style.display = "none";
+    classique.style.display = "block";
 }
 }
+function fConfort(){
+    var classique = document.getElementById("idConfImg");
+    if(classique.style.display === "block"){
+        classique.style.display ="none";
+    }
+    else{
+        classique.style.display = "block";
+    }
+    }
