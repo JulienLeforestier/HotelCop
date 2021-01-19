@@ -106,7 +106,9 @@ footer
 }
 #Classique{
 padding-top: 200px ;
-
+}
+#idClasImg{
+	display:none;
 }
 
 #Confort{
