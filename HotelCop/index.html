@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HotelCorp</title>
+    <title>HotelCop</title>
+    <!-- J'ai mis le font-awesome en CDN car je n'ai pas trouvé comment le télécharger sans payer et on ne l'utilise que sur cette page  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
@@ -16,7 +17,9 @@
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
-            <a class="navbar-brand" href="index.html"><img src="img/icones_logo/logo.png"> HotelCorp</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
                 <span class="navbar-toggler-icon"></span>
@@ -29,18 +32,49 @@
                     <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
                     <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
+                    <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png"
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
                         style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png"
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
                         style="height: 16px; width: 24px;"></a>
             </div>
             <div class="w-100"></div>
-            <form method="post" class="form-inline navbar-nav" action="reservation.html">
-                <input type="text" id="inputDate">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
-            </form>
-            <a href="command.html" id="shoppingCart"><i class="fas fa-shopping-cart"></i> Ma commande</a>
+            <div class="container-fluid justify-content-center" id="MenuReservation">
+                <div class="row">
+                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                        <div class="col-lg-7">
+                            <label class="label">Dates : </label>
+                            <input type="text" id="inputDateFrom">
+                            <input type="text" id="inputDateTo">
+                        </div>
+                        <div class="col-lg-2">
+                            <label class="label">Chambres : </label>
+                            <select name="chambers" id="chambers" class="form-control col-sm-4" required>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label class="label">Personnes : </label>
+                            <select name="people" id="people" class="form-control col-sm-4" required>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -58,22 +92,22 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active" style="background-image: url('img/chambers/chambreDeluxe.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</a></h3>
                         </div>
                     </div>
                     <div class="carousel-item" style="background-image: url('img/chambers/suiteRoom.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</a></h3>
                         </div>
                     </div>
                     <div class="carousel-item" style="background-image: url('img/spa/spa1.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</a></h3>
                         </div>
                     </div>
                     <div class="carousel-item" style="background-image: url('img/restaurant/gastronomie1.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</a></h3>
                         </div>
                     </div>
                 </div>
@@ -91,25 +125,22 @@
 
     <section id="profile" class="text-center">
         <div class="container-fluid justify-content-center">
-            <h1>NOTRE HÔTEL</h1>
+            <h2>NOTRE HÔTEL</h2>
             <div class="row">
-                <div class="col-3">
-                    <img src="img/icones_logo/logoHotelCop.png" class="rounded-circle photo" alt=""
-                        style="height: 200px; width: 200px;">
-                </div>
-                <div class="col-9">
+                <div class="col-md-12">
                     <p class="profile">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, odio eligendi, a quis iusto
-                        nesciunt velit cum beatae, magni saepe optio? Sapiente laborum aperiam mollitia, laudantium,
-                        ipsum beatae deserunt sequi, animi dolores cumque consectetur vero ipsa distinctio! Debitis
-                        cupiditate sunt excepturi hic quasi optio est alias facere numquam quam at, incidunt atque
-                        reiciendis temporibus quo molestiae animi vel dolore aliquam quas neque, cumque error? Est
-                        beatae voluptatibus explicabo ad cum expedita culpa saepe accusamus error nihil? Veritatis
-                        mollitia illo sed officiis modi, quod ratione? Commodi, explicabo necessitatibus enim neque
-                        aperiam atque reiciendis nisi quisquam voluptatum unde asperiores recusandae quasi, eligendi
-                        soluta. Dicta ea iste non, eius tenetur unde vel laboriosam necessitatibus modi ab minima
-                        impedit voluptatem quia debitis libero esse quas corrupti possimus voluptatum reprehenderit
-                        suscipit. Sint dolore nisi deserunt nemo nulla.
+                        HotelCop est un 5 étoiles d'exception, un monument de l'hôtellerie parisienne.
+                        Situé avenue Montaigne, HotelCop propose 160 chambres et suites luxueuses, un spa, un restaurant
+                        gastronomique, un bar et des salles de réception élégantes.
+                    </p>
+                    <p class="profile">
+                        Équipements : parking, restaurant, vidéo, jacuzzi, sauna, spa, piscine, exception, air
+                        conditionné, wifi (en supplément), bar, room service, coffre fort individuel, sauna / hammam,
+                        mini bar, sèche-cheveux, service blanchisserie, télévision satellite, salle de réunion, spa, vue
+                        exceptionnelle.
+                    </p>
+                    <p class="profile">
+                        <a href="history.html">En savoir plus sur l'histoire de l'HotelCop</a>
                     </p>
                 </div>
             </div>
@@ -118,69 +149,79 @@
 
     <section id="notice" class="text-center">
         <div class="container-fluid justify-content-center">
-            <h1>COMMENTAIRES CLIENTS</h1>
+            <h2>COMMENTAIRES CLIENTS</h2>
             <div id="myTable" class="row col-lg-12 justify-content-center">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Mr X</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
-                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                        <p class="card-text">Nous avons séjourné deux jours dans ce superbe hôtel. Tout était parfait.
+                            L'hôtel possède une piscine intérieure et extérieure, un spa, un restaurant et il est
+                            accessible aux personnes à mobilité reduite. J'ai beaucoup apprécié la gentillesse et le
+                            professionnalisme de l'ensemble du personnel.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Aquaman</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
-                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                        <p class="card-text">C'est un endroit idéal pour se ressoucer.
+                            L'accueil fut parfait avec un personnel aux petits soins.
+                            J'ai beaucoup apprécié ma chambre climatisée, elle était très moderne (avec un accès au
+                            Wi-Fi), spacieuse, agréablement décorée, avec une belle vue, calme et la salle était
+                            superbe, le tout étant d'une grande propreté .
+                            Le petit-dejeuner était très copieux.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Springsteen</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
-                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                        <p class="card-text">Un endroit juste magique et parfait pour se ressourcer! Luxe et calme dans
+                            un ancien hôtel avec de magnifiques touches de modernité. Tout y est parfait, beaucoup de
+                            personnel aux petits soins, extrêmement gentil, le respect des gestes barrières en période
+                            de Covid, une propreté éclatante, piscine superbe, le grill pour une cuisine haute voltige.
+                            Nous espérons pouvoir y revenir après le confinement..</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Michel Bussi</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-                            rem cumque quod temporibus, esse saepe iure vitae officia quos provident accusamus eius
-                            atque harum blanditiis sit placeat omnis reprehenderit! Laudantium.</p>
+                        <p class="card-text">De passage à Paris nous avons voulu prendre le goûter à l’hôtel HotelCop.
+                            Un pur moment de bonheur, le menu dégustation est excellent et surtout un cadre
+                            exceptionnel. La prochaine fois nous reviendrons mais pour y dormir.</p>
                     </div>
                 </div>
             </div>
-            <a href="notice.html">Laisser votre avis</a>
+            <p class="profile">
+                <a href="notice.html">Laisser votre avis</a>
+            </p>
         </div>
     </section>
 
     <section id="teasers" class="text-center">
         <div class="container-fluid justify-content-center">
-            <h1>COUP DE PROJECTEUR SUR...</h1>
-            <div class="row" id="nav-triage">
+            <h2>COUP DE PROJECTEUR SUR...</h2>
+            <div class="row">
                 <div class="col-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus deserunt magni
-                    corporis facere eius iure unde vitae, autem earum, cum, tempore quos neque architecto quo expedita
-                    voluptatem quis sapiente!
+                    Magnifique spa, piscine intérieure de 18 mètres sur 9, hammam, salle de sport, sauna...
                 </div>
                 <div class="col-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus deserunt magni
-                    corporis facere eius iure unde vitae, autem earum, cum, tempore quos neque architecto quo expedita
-                    voluptatem quis sapiente!
+                    Une superbe façade originale datant du XVe siècle...
                 </div>
                 <div class="col-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus deserunt magni
-                    corporis facere eius iure unde vitae, autem earum, cum, tempore quos neque architecto quo expedita
-                    voluptatem quis sapiente!
+                    Un service d'étage 24h/24 et une vue de rêve, on ne sort de sa chambre que pour visiter ou aller au
+                    spa...
                 </div>
             </div>
+            <p class="profile">
+                <a href="press.html">Voir plus d'articles de presse nous concernants</a>
+            </p>
+            <p class="profile">
+                <a href="actuality.html">ou d'actualités sur notre secteur</a>
+            </p>
         </div>
     </section>
 
     <section id="otherLinks" class="text-center">
+        <img src="img/spa/bandeau.jpg" alt="spa">
         <hr>
         <div>
             <a href="contact.html">Contact</a>
