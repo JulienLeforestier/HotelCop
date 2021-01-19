@@ -1,35 +1,20 @@
-body
-{
+/**** all ****/
+body{
 	margin: 0;
 	font-family: "Comic Sans MS", "Arial Black", "Times New Roman", serif;
 } 
 
-#navigation
-{
-    padding: 8px;
-	background-color: rgb(20, 20, 20);
-	opacity: 90%;
+h1{
+	text-align: center;
+    margin-top: 20px;
 }
 
-.navbar {
-	flex-wrap: wrap;
+section{
+	margin-bottom: 50px;
 }
 
-.navbar-nav
-{
-	margin: auto; 
-}
-
-.nav-link{
-	color: white;
-}
-
-#shoppingCart{
-	color: white;
-}
-
-#margin-top{
-	margin-top: 130px;
+.label{
+	float: left;
 }
 
 .profile{
@@ -42,6 +27,34 @@ body
 	text-align: center;
 }
 
+/**** navbar ****/
+#navigation{
+    padding: 8px;
+	background-color: rgb(20, 20, 20);
+	opacity: 90%;
+}
+
+.navbar{
+	flex-wrap: wrap;
+}
+
+.navbar-nav{
+	margin: auto; 
+}
+
+.nav-link{
+	color: white;
+}
+
+#reservation{
+	margin: auto;
+}
+
+#margin-top{
+	margin-top: 130px;
+}
+
+/**** carousel ****/
 .carousel-item 
 {
 	height: 80vh;
@@ -54,42 +67,17 @@ body
 	color: white;
 }
 
-.card-body
-{
+/**** cards ****/
+.card-body{
 	margin: 1%;
 }
 
-.card
-{
+.card{
 	width: 580px;
 	margin: 0.6%;
 }
 
-h1
-{
-	text-align: center;
-    margin-top: 20px;
-}
-
-h2, h4
-{
-	font-size: 2em;
-}
-
-form.was-validated
-{
-	background: #D3D3D3;
-	padding: 1%;
-	border: 4px #D3D3D3 ridge;
-  	border-radius: 10px;
-}
-
-#registration_form
-{
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-
+/**** footer ****/
 footer 
 {
 	margin-left: 28%;
@@ -100,6 +88,7 @@ footer
 	font-size: 0.8em; 
 }
 
+/**** media ****/
 @media all and (max-width : 1024px)
 {
 	/* #nav-triage, #carouselExampleIndicators
@@ -138,4 +127,20 @@ padding-top: 200px ;
 }
 .details p{
 	text-align: center;
+}
+
+/**** restaurant ****/
+.restaurant{
+	background-color: rgb(200, 200, 235);
+	width: 80%;
+	padding: 2%;
+}
+
+/**** map ****/
+#map{
+	width: 910px;
+	height: 600px;
+	border: 0;
+	margin: auto;
+	display: block;
 }
