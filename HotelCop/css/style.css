@@ -20,6 +20,14 @@ body
 	margin: auto; 
 }
 
+.nav-link{
+	color: white;
+}
+
+#shoppingCart{
+	color: white;
+}
+
 #margin-top{
 	margin-top: 130px;
 }
@@ -40,6 +48,10 @@ body
 	min-height: 350px;
 	background: no-repeat center center scroll;
 	background-size: cover;
+}
+
+.caption{
+	color: white;
 }
 
 .card-body
@@ -107,28 +119,29 @@ footer
 #Classique{
 padding-top: 200px ;
 }
-#idClasImg{
-	display:none;
-	
-}
+
 
 #Confort{
 	padding-top: 200px ;
+}
 
-}
-#idConfImg{
-	display:none;
-	
-}
 #Deluxe{
 	padding-top: 200px ;
-
 }
+
+
 #Suite{
 	padding-top: 200px ;
 	padding-bottom: 100px;
-
 }
+
 .details p{
 	text-align: center;
 }
+
+#detailClas{
+	display:none;
+
+}
+
+

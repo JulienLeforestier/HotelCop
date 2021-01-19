@@ -1,41 +1,61 @@
-$(function () {
-    //datepicker
-    $('#inputDate').datepicker({
-        altField: "#datepicker",
-        closeText: 'Fermer',
-        prevText: 'Précédent',
-        nextText: 'Suivant',
-        currentText: 'Aujourd\'hui',
-        monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-        monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
-        dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-        dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
-        dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
-        weekHeader: 'Sem.',
-        firstDay: 1,
-        dateFormat: 'dd-mm-yy',
-        isRTL: false,
-        showMonthAfterYear: false,
-        yearSuffix: ""
-    });
-});   
+//datepicker
+$('#inputDate').datepicker({
+    altField: "#datepicker",
+    closeText: 'Fermer',
+    prevText: 'Précédent',
+    nextText: 'Suivant',
+    currentText: 'Aujourd\'hui',
+    monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+    monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
+    dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+    dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+    dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+    weekHeader: 'Sem.',
+    firstDay: 1,
+    dateFormat: 'dd-mm-yy',
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ""
+});
 
-/*****  effet toggle page chambres.html */
-function fClassique(){
-var classique = document.getElementById("idClasImg");
-if(classique.style.display === "block"){
-    classique.style.display ="none";
-}
-else{
-    classique.style.display = "block";
-}
-}
-function fConfort(){
-    var classique = document.getElementById("idConfImg");
-    if(classique.style.display === "block"){
-        classique.style.display ="none";
-    }
-    else{
+
+//fonction d'impression
+/*var printWindow = document.getElementsById('print');
+printWindow.addEventListener('click', print_page);
+function print_page(){
+    alert();
+    window.print();
+  }*/
+
+/*****  effet toggle page chambers.html */
+/* //  après reflexion, on affiche la page onclick="fClassique()"
+
+function fClassique() {
+    var classique = document.getElementById('idClasImg');
+    if (classique.style.display === "block") {
+        classique.style.display = "none";
+      } else {
         classique.style.display = "block";
+      }
+}
+function fConfort() {
+    var confort = document.getElementById('idConfImg');
+    if (confort.style.display === "block") {
+        confort.style.display = "none";
+      } else {
+        confort.style.display = "block";
+      }
+}
+
+*/
+
+/****   Page chambers.html  gabrielle ******/
+function fDetail(){
+var detail = document.getElementById('detailClas');
+    if (detail.style.display === "block") {
+        detail.style.display = "none";
+    } else {
+        detail.style.display = "block";
     }
-    }
+
+}
