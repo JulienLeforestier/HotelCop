@@ -52,12 +52,34 @@ function getDate(element) {
 document.getElementById('print').addEventListener('click', function () { window.print(); });
 
 /*****  effet toggle page chambers.html */
+/* //  après reflexion, on affiche la page onclick="fClassique()"
+
 function fClassique() {
-    var classique = document.getElementById("idClasImg");
-    if (classique.style.display === "none") {
-        this.style.display = "block";
-    }
-    else {
+    var classique = document.getElementById('idClasImg');
+    if (classique.style.display === "block") {
         classique.style.display = "none";
+      } else {
+        classique.style.display = "block";
+      }
+}
+function fConfort() {
+    var confort = document.getElementById('idConfImg');
+    if (confort.style.display === "block") {
+        confort.style.display = "none";
+      } else {
+        confort.style.display = "block";
+      }
+}
+
+*/
+
+/****   Page chambers.html  gabrielle ******/
+function fDetail(){
+var detail = document.getElementById('detailClas');
+    if (detail.style.display === "block") {
+        detail.style.display = "none";
+    } else {
+        detail.style.display = "block";
     }
+
 }

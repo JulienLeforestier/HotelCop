@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Classique</title>
+    <title>Chambres</title>
     <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -53,24 +53,24 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active" style="background-image: url('img/chambers/classiqueRoom.png')">
+                    <div class="carousel-item active" style="background-image: url('img/chambers/chambreDeluxe.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Gamme Deluxe</h3>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom1.png')">
+                    <div class="carousel-item" style="background-image: url('img/chambers/suiteRoom.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Gamme Suite</h3>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom2.png')">
+                    <div class="carousel-item" style="background-image: url('img/chambers/chambreClassique1.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Gamme Classique</h3>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom3.jpg')">
+                    <div class="carousel-item" style="background-image: url('img/chambers/chambreConfort.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Gamme Confort</h3>
                         </div>
                     </div>
                 </div>
@@ -87,17 +87,17 @@
     </section>
     <section>
         <ul class="nav justify-content-center" id="chambres">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="chambres.html">Toutes les Gammes</a>
+            <li class="nav-item CCDS">
+                <a class="nav-link active" aria-current="page" href="#Classique">Classique</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cConfort.html">Confort</a>
+            <li class="nav-item CCDS">
+                <a class="nav-link" href="#Confort">Confort</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cDeluxe.html">Deluxe</a>
+            <li class="nav-item CCDS">
+                <a class="nav-link" href="#Deluxe">Deluxe</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cSuite.html">Suite</a>
+            <li class="nav-item CCDS">
+                <a class="nav-link" href="#Suite">Suite</a>
             </li>
         </ul>
     </section>
@@ -105,46 +105,162 @@
     <section id="Classique" class="container">
         <h1>Chambre Classique</h1>
         <p class="justify-center m-4">
-            Situées du premier au sixième étage, les chambres Classiques se déclinent dans une harmonie raffinée de
-            40m², promettant à leurs hôtes un confort irréprochable et un avant-goût de leur séjour privilégié dans la
-            Ville Lumière. Elles proposent au regard de très belles vues sur Paris, certaines bénéficiant même d'un
-            balcon.
+            Les chambres de l’HôtelCop incarnent un style résidentiel sophistiqué et élégant.
+            Chacun de nos appartements sont dotés d’une décoration personnalisée, de mobilier confortable et d’une
+            spacieuse salle de bain de marbre.
         </p>
-        <h2 class="offset-5 mt-5 mb-5" id="details">Détails</h2>
+        <div class="row" id="idClasImg">
+            <img class="col-6" src="img/chambers/classique.png" alt="Chambres Confort">
+            <div class="col-6">
+                <img class="mr-4" src="img/chambers/separator2.png">
+                <span>Informations pratiques</span>
+                <img class="ml-4" src="img/chambers/separator2.png">
+                <div class="row offset-3">
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/surface2.png" alt="">
+                        <span>40m²</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/personne1.png" alt="">
+                        <span>2 invités</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/lit1.png" alt="">
+                        <span> Queen size</span>
+                    </div>
+                </div>
+                <button type="button" onclick="fDetail()" id ="btnDetail" class="offset-4 mt-5">Détails</button>
+            </div>
+            <div id="detailClas" class="container">
+                <div class="row details">
+                    <div class="col-4 ">
+                        <hr>
+                        <p>Lits</p>
+                    </div>
+                    <div class="col-4">
+                        <hr>
+                        <p>Capacité</p>
+                    </div>
+                    <div class="col-4">
+                        <hr>
+                        <p>Surface</p>
+                    </div>
+                    <div class="col-4">
+                        <hr>
+                        <p>Etage</p>
+                    </div>
+                    <div class="col-4">
+                        <hr>
+                        <p>Salle de bain</p>
+                    </div>
+                    <div class="col-4">
+                        <hr>
+                        <p>Tarif</p>
+                    </div>
+        
+                    <button type="button" class="offset-5 mt-5">Réservation</button>
+                </div>
+                </div>
+        </div>
+    </section>
 
+    <section id="Confort" class="container">
+        <h1>Chambre Confort</h1>
+        <p class="justify-center m-4">
+            Les chambres de l’HôtelCop incarnent un style résidentiel sophistiqué et élégant.
+            Chacun de nos appartements sont dotés d’une décoration personnalisée, de mobilier confortable et d’une
+            spacieuse salle de bain de marbre.
+        </p>
+        <div class="row" id="idConfImg">
+            <img class="col-6" src="img/chambers/chambreConfort.jpg" alt="Chambres Confort">
+            <div class="col-6">
+                <img class="mr-4" src="img/chambers/separator2.png">
+                <span>Informations pratiques</span>
+                <img class="ml-4" src="img/chambers/separator2.png">
+                <div class="row offset-3">
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/surface2.png" alt="">
+                        <span>40m²</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/personne1.png" alt="">
+                        <span>2 invités</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/lit1.png" alt="">
+                        <span> Queen size</span>
+                    </div>
+                </div>
+                <button type="button" class="offset-4 mt-5"><a href="cConfort.html">Détails</a></button>
+            </div>
+        </div>
+    </section>
 
-        <div class="row details">
-            <div class="col-4 ">
-                <hr>
-                <p>Lits</p>
+    <section id="Deluxe" class="container">
+        <h1>Chambre Deluxe</h1>
+        <p class="justify-center m-4">
+            Les chambres de l’HôtelCop incarnent un style résidentiel sophistiqué et élégant.
+            Chacun de nos appartements sont dotés d’une décoration personnalisée, de mobilier confortable et d’une
+            spacieuse salle de bain de marbre.
+        </p>
+        <div class="row" id="idDeluImg">
+            <img class="col-6" src="img/chambers/chambreDeluxe1.jpg" alt="Chambres Deluxe">
+            <div class="col-6">
+                <img class="mr-4" src="img/chambers/separator2.png">
+                <span>Informations pratiques</span>
+                <img class="ml-4" src="img/chambers/separator2.png">
+                <div class="row offset-3">
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/surface2.png" alt="">
+                        <span>40m²</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/personne1.png" alt="">
+                        <span>2 invités</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/lit1.png" alt="">
+                        <span> Queen size</span>
+                    </div>
+                </div>
+                <button type="button" class="offset-4 mt-5"><a href="cDeluxe.html">Détails</a></button>
             </div>
-            <div class="col-4">
-                <hr>
-                <p>Capacité</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Surface</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Etage</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Salle de bain</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Tarif</p>
-            </div>
+        </div>
+    </section>
 
-            <button type="button" class="offset-5 mt-5">Réservation</button>
+    <section id="Suite" class="container">
+        <h1>Chambre Suite</h1>
+        <p class="justify-center m-4">
+            Les chambres de l’HôtelCop incarnent un style résidentiel sophistiqué et élégant.
+            Chacun de nos appartements sont dotés d’une décoration personnalisée, de mobilier confortable et d’une
+            spacieuse salle de bain de marbre.
+        </p>
+        <div class="row" id="idSuitImg">
+            <img class="col-6" src="img/chambers/suiteRoom1.jpg" alt="Chambres Suite">
+            <div class="col-6">
+                <img class="mr-4" src="img/chambers/separator2.png">
+                <span>Informations pratiques</span>
+                <img class="ml-4" src="img/chambers/separator2.png">
+                <div class="row offset-3">
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/surface2.png" alt="">
+                        <span>40m²</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/personne1.png" alt="">
+                        <span>2 invités</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/lit1.png" alt="">
+                        <span> Queen size</span>
+                    </div>
+                </div>
+                <button type="button" class="offset-4 mt-5"><a href="cSuite.html">Détails</a></button>
+            </div>
         </div>
     </section>
 
 
-    
 
     <section id="footer" class="text-center">
         <footer>
