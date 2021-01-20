@@ -115,7 +115,10 @@ footer{
 }
 
 /**** media ****/
-@media all and (max-width : 768px){
+@media all and (max-width : 990px){
+	#inputDateFrom, #inputDateTo, #chambersNb, #peopleNb, #labelDate{
+		display: none;
+	}
 	/* #nav-triage, #carouselExampleIndicators
 	{
 		display: none;
@@ -167,8 +170,14 @@ footer{
 	display:none;
 }
 
-/**** restaurant ****/
-.restaurant{
+/**** spa ****/
+#ourOpinion1, #ourOpinion2, #ourOpinion3, #ourOpinion4, #ourOpinion5{
+	margin-top: 10px;
+	display: none;
+}
+
+/**** background pour des containers spécifiques ****/
+.restaurant, .spa, .mapping{
 	background-color: rgb(223, 245, 255);
 	width: 80%;
 	padding: 2%;

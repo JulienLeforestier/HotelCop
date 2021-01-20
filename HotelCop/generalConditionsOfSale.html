@@ -39,19 +39,19 @@
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
                     <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
-                        <div class="col-md-6">
-                            <label class="label">Dates : </label>
+                        <div class="col-lg-6">
+                            <label class="label" id="labelDate">Dates : </label>
                             <input type="text" id="inputDateFrom">
                             <input type="text" id="inputDateTo">
                         </div>
-                        <div class="col-md-5">
-                            <select name="chambers" id="chambers" class="form-control">
+                        <div class="col-lg-5">
+                            <select name="chambers" id="chambersNb" class="form-control">
                                 <option value="" selected>Chambres</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                            <select name="people" id="people" class="form-control">
+                            <select name="people" id="peopleNb" class="form-control">
                                 <option value="" selected>Personnes</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -63,7 +63,7 @@
                                 <option value="8">8</option>
                             </select>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-lg-1">
                             <button class="btn btn-outline-light" type="submit">Réservation</button>
                         </div>
                     </form>

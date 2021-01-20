@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plan du site</title>
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
+                aria-controls="MenuBarToDevelop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuBarToDevelop">
+                <ul class="navbar-nav">
+                    <li><a class="nav-item nav-link" href="index.html">Accueil</a></li>
+                    <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
+                    <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
+                    <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
+                    <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
+                    <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
+                    <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
+                </ul>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
+                        style="height: 16px; width: 24px;"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
+                        style="height: 16px; width: 24px;"></a>
+            </div>
+            <div class="w-100"></div>
+            <div class="container-fluid justify-content-center" id="MenuReservation">
+                <div class="row">
+                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                        <div class="col-lg-6">
+                            <label class="label" id="labelDate">Dates : </label>
+                            <input type="text" id="inputDateFrom">
+                            <input type="text" id="inputDateTo">
+                        </div>
+                        <div class="col-lg-5">
+                            <select name="chambers" id="chambersNb" class="form-control">
+                                <option value="" selected>Chambres</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select name="people" id="peopleNb" class="form-control">
+                                <option value="" selected>Personnes</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-light" type="submit">Réservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="mapping">
+        <h1>Plan du site</h1>
+        <div class="container-fluid justify-content-center">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2 mapping">
+                    <h3>Accueil et liens divers</h3>
+                    <ul>
+                        <li><a href="../HotelCop/index.html">Accueil</a></li>
+                        <li><a href="../HotelCop/events.html">Évenèments</a></li>
+                        <li><a href="../HotelCop/notice.html">Avis</a></li>
+                        <li><a href="../HotelCop/history.html">Histoire d'HotelCop</a></li>
+                        <li><a href="../HotelCop/photos.html">Photos</a></li>
+                        <li><a href="../HotelCop/press.html">Presse</a></li>
+                        <li><a href="../HotelCop/actuality.html">Actualités</a></li>
+                        <li><a href="../HotelCop/contact.html">Nous contacter</a></li>
+                        <li><a href="../HotelCop/recruitment.html">Recrutement</a></li>                  
+                        <li><a href="../HotelCop/map.html">Carte (GoogleMap)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2 mapping">
+                    <h3>Chambres, spa et restaurant</h3>
+                    <ul>
+                        <li><a href="../HotelCop/chambers.html">Chambres</a></li>
+                        <li><a href="../HotelCop/cClassique.html">Classique</a></li>
+                        <li><a href="../HotelCop/cConfort.html">Confort</a></li>
+                        <li><a href="../HotelCop/cDeluxe.html">Deluxe</a></li>
+                        <li><a href="../HotelCop/cSuite.html">Suite</a></li>
+                        <br>
+                        <li><a href="../HotelCop/spa.html">Spa</a></li>
+                        <br>
+                        <li><a href="../HotelCop/restaurant.html">Restaurant</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2 mapping">
+                    <h3>Réservations</h3>
+                    <ul>
+                        <li><a href="../HotelCop/reservation.html">Réservation</a></li>
+                        <li><a href="../HotelCop/command.html">Commande en cours</a></li>
+                        <li><a href="../HotelCop/newsletter.html">Newsletters</a></li>
+                        <li><a href="../HotelCop/generalConditionsOfSale.html">CGV</a></li>
+                        <li><a href="../HotelCop/legalDisclaimer.html">Mentions légales</a></li>
+                        <br><br><br><br>
+                        <li><a href="../HotelCop/mapping.html">Plan du site</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="text-center">
+        <footer>
+            . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
+                générales de ventes</a>
+            . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
+                href="newsletter.html">Newsletter</a> .
+            <br>
+            © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+        </footer>
+    </section>
+
+    <script src="libraries/jquery-3.5.1.min.js"></script>
+    <script src="libraries/popper.min.js"></script>
+    <script src="libraries/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

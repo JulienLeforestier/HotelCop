@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
+    <title>Spa</title>
     <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -39,19 +39,19 @@
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
                     <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
-                        <div class="col-md-6">
-                            <label class="label">Dates : </label>
+                        <div class="col-lg-6">
+                            <label class="label" id="labelDate">Dates : </label>
                             <input type="text" id="inputDateFrom">
                             <input type="text" id="inputDateTo">
                         </div>
-                        <div class="col-md-5">
-                            <select name="chambers" id="chambers" class="form-control">
+                        <div class="col-lg-5">
+                            <select name="chambers" id="chambersNb" class="form-control">
                                 <option value="" selected>Chambres</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                            <select name="people" id="people" class="form-control">
+                            <select name="people" id="peopleNb" class="form-control">
                                 <option value="" selected>Personnes</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -63,7 +63,7 @@
                                 <option value="8">8</option>
                             </select>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-lg-1">
                             <button class="btn btn-outline-light" type="submit">Réservation</button>
                         </div>
                     </form>
@@ -72,8 +72,174 @@
         </nav>
     </header>
 
-    <section>
+    <section id="spa_header" class="text-center">
+        <h1>SPA</h1>
+        <div class="container-fluid justify-content-center spa">
+            <div class="row">
+                <p>
+                    Le Spa de l'HotelCop, à Paris, propose la plus grande piscine intérieure de la région Parisienne
+                    avec jets massants, six salles de soins, un hammam, un sauna, une salle de sport et un espace
+                    fitness. Le Spa est un lieu empreint de sérénité dédié au ressourcement du corps et de l’esprit.
+                    <br><br>
+                    Horaires : Lundi au Vendredi : 10:00 - 22:00 / Samedi : 09:00 - 22:00 / Dimanche: 10:00 - 18:30
+                </p>
+            </div>
+        </div>
+        <br>
+        <img src="img/spa/spa6.jpg" alt="piscine_spa">
+    </section>
 
+    <section id="spa_presentation" class="text-center">
+        <h2>SERVICES, SOINS ET PRESTATIONS</h2>
+        <div class="container-fluid justify-content-center spa">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Des cours de fitness sont disponibles</p>
+                    <p>Hammam</p>
+                    <p>Massages</p>
+                    <p>Services pour les hommes</p>
+                    <p>Épilation à la cire</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Enveloppement corporel</p>
+                    <p>Manucures/pédicures</p>
+                    <p>Piscine longue</p>
+                    <p>Soins du visage</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Gommage corporel</p>
+                    <p>Massage en couple</p>
+                    <p>Salons pour hommes et femmes séparés</p>
+                    <p>Sur rendez-vous uniquement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurant_cards" class="text-center">
+        <h2>NOS SOINS</h2>
+        <div class="container-fluid justify-content-center">
+
+            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <h3>LE SOIN DETENTE "AU-DELÀ DE L'EAU"</h3>
+            <img src="img/spa/soin1.jpg" alt="soin_spa">
+            <p>210€ pour 1h30 de soin</p>
+            <p>
+                Dans un lieu entièrement pensé autour d'une superbe piscine, impossible de ne pas imaginer unsoin autour
+                de la thématique de l'eau!<br>
+                Bain de pieds chaud puis froid pour délasser, massage du corps sur un matelas aquatique, hydratation du
+                visage...<br>
+                HotelCop a élaboré le protocole visage et corps "Au-delà de l'eau" exclusivement pour son Spa.
+            </p>
+            <button class="ourOpinion">Notre avis</button>
+            <div id="ourOpinion1" class="container">
+                <p>
+                    1h30 de détente pure, voilà ce qu'offre ce soin jamais vu ailleurs.<br>
+                    Mention spéciale au matelas rempli d'eau tiède qui nous place en apesanteur pendant que l'on se fait
+                    masser les jambes, les bras, le ventre ou le dos.<br>
+                    Complet, le soin s'achève avec un nettoyage de la peau du visage et un masque hydratant.<br>
+                    De quoi ressortir détendue, et reboostée pour affronter l'extérieur.
+                </p>
+            </div>
+
+            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <h3>LE SOIN DECOUVERTE "LE MIRACLE L’OR DE VIE"</h3>
+            <img src="img/spa/soin2.jpg" alt="soin_spa">
+            <p>520€ pour 2h de soin</p>
+            <p>
+                Au cœur de cette cure d'exception, la sève d’Yquem, puissant fertilisant extrait des sarments de vigne
+                du Château éponyme, agit comme un véritable shot énergétique au contact de l’épiderme.<br>
+                Le soin démarre par un modelage intense du dos qui relaxe profondément et permet de redresser la
+                posture.<br>
+                La peau est ensuite exfoliée et préparée à recevoir les actifs Or de Vie.<br>
+                Après l’application du sérum, les tensions se dénouent petit à petit sous l'effet d'un shiatsu du visage
+                et du cuir chevelu savamment effectué.<br>
+                Puis, le soin se poursuit par l’application d'un masque doré chauffant dont l'action durcissante va
+                faciliter la pénétration des actifs antioxydants.
+            </p>
+            <button class="ourOpinion">Notre avis</button>
+            <div id="ourOpinion2" class="container">
+                <p>Après deux heures passées dans ce cocon de raffinement gris perle, aux couleurs emblématiques de la
+                    célèbre maison de couture, on se sent régénérée de la tête aux pieds.<br>
+                    La peau est comme repulpée, les petites ridules de déshydratation au coin de l’œil ont disparu comme
+                    par magie.<br>
+                    Un pur moment de détente et une remise en beauté 5 étoiles dont on ressort transformée, la mine
+                    radieuse.
+                </p>
+            </div>
+
+            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <h3>LE SOIN RELAXANT "YUMÉ AU SIX SENSES"</h3>
+            <img src="img/spa/soin3.jpg" alt="soin_spa">
+            <p>295€ pour 3h de soin</p>
+            <p>
+                Matérialiser les pouvoirs du thé sous toutes ses formes dans un soin exceptionnel,<br> telle est l’idée
+                de ce
+                soin holistique qui vise à rétablir le parfait équilibre énergétique du corps en combinant les bienfaits
+                naturels du thé,<br> les techniques de massage uniques de Six Senses,<br> et un travail sur les chakras
+                et des
+                fréquences vibratoires spécifiques pour un bien-être optimal.
+            </p>
+            <button class="ourOpinion">Notre avis</button>
+            <div id="ourOpinion3" class="container">
+                <p>
+                    Une bulle de détente dans un cocon naturel où l’on passe 3 heures de rêve, bercée par des chants
+                    sensuels et hypnotiques.<br> Le corps est entièrement gommé, détoxifié et massé avec des soins à
+                    base de thé vert Yemaya.<br> Les manipulations sont plus que relaxantes, le corps est étiré, dénoué
+                    et le flux
+                    des énergies est relancé.<br> Bien sûr, on finit par une tasse de thé pour éliminer les toxines.<br>
+                    On ressorts ressourcée et vraiment détendue.
+                </p>
+            </div>
+
+            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <h3>LE SOIN PLAISIR "CÉRÉMONIE D’ORIENT"</h3>
+            <img src="img/spa/soin4.jpg" alt="soin_spa">
+            <p>150€ pour 1h15 de soin</p>
+            <p>
+                Après un gommage aux épices et un modelage nourrissant, des ballotins d’épices parfumés et tiédis et
+                contenant des pierres chaudes sont appliqués sur le dos et le ventre.<br> Les senteurs et les pressions
+                exercées s’allient en un rituel ressourçant qui nous fait voyager en Orient.
+            </p>
+            <button class="ourOpinion">Notre avis</button>
+            <div id="ourOpinion4" class="container">
+                <p>
+                    Installée sur une table chauffante ultra confortable, on se laisse aller à la rêverie orientale
+                    grâce
+                    aux parfums épicés et sucrés du gingembre et de la cannelle.<br> Après un gommage du corps qui
+                    laisse la
+                    peau douce, les tensions sont apaisées sous la chaleur de l’huile tiédie et du galet chaud contenu
+                    dans le ballotin.<br> On termine la séance en dégustant un thé chaud pour revenir doucement à la
+                    réalité
+                    après ce massage dépaysant.
+                </p>
+            </div>
+
+            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <h3>LE SOIN ÉVASION "ROYAL TAOÏSTE"</h3>
+            <img src="img/spa/soin5.jpg" alt="soin_spa">
+            <p>273€ pour 3h de soin</p>
+            <p>
+                Un bain japonais d’arômes et de fleurs, un gommage aromatique aux épices, massage taoïste et
+                soin-massage
+                du visage taoïste « Jeunesse et Eclat »…<br> Pas moins de 4 étapes pour ce soin inspiré de techniques de
+                la
+                médecine chinoise !<br> L’objectif : harmoniser le Yin et le Yang pour une régénérescence totale.
+            </p>
+            <button class="ourOpinion">Notre avis</button>
+            <div id="ourOpinion5" class="container">
+                <p>
+                    Plus qu’un soin, ce rituel est un voyage au cœur de l’Asie.<br> Plongée dans un bain chaud et
+                    parfumé, on
+                    oublie vite l’agitation extérieure.<br> Puis, à mesure que les rituels s’enchainent, les tensions se
+                    dénouent jusqu’à plonger dans un état de profonde relaxation.<br> Dernier rituel, le soin du visage
+                    est
+                    un moment qui permet de reprendre pied avec la réalité.<br> Après trois heures de soin, on sort
+                    fatiguée, relâchée, mais l’esprit léger, le teint radieux en prime.
+                </p>
+            </div>
+            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+        </div>
     </section>
 
     <section id="footer" class="text-center">
