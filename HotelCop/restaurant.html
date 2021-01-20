@@ -22,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse" id="MenuBarToDevelop">
                 <ul class="navbar-nav">
-                    <li><a class="nav-item nav-link" href="index.html">Aperçu</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Accueil</a></li>
                     <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
                     <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
                     <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
@@ -39,21 +39,19 @@
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
                     <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
-                        <div class="col-lg-7">
+                        <div class="col-md-6">
                             <label class="label">Dates : </label>
                             <input type="text" id="inputDateFrom">
                             <input type="text" id="inputDateTo">
                         </div>
-                        <div class="col-lg-2">
-                            <select name="chambers" id="chambers" class="form-control" required>
+                        <div class="col-md-5">
+                            <select name="chambers" id="chambers" class="form-control">
                                 <option value="" selected>Chambres</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <select name="people" id="people" class="form-control" required>
+                            <select name="people" id="people" class="form-control">
                                 <option value="" selected>Personnes</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -65,16 +63,14 @@
                                 <option value="8">8</option>
                             </select>
                         </div>
-                        <div class="col-lg-1">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+                        <div class="col-md-1">
+                            <button class="btn btn-outline-light" type="submit">Réservation</button>
                         </div>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div id="margin-top"></div>
 
     <section id="restaurant_header" class="text-center">
         <h1>RESTAURANT</h1>
@@ -124,19 +120,22 @@
                     <h3>Brasserie</h3>
                     <p>De 12h à 14h</p>
                     <p>A partir de 60.00 EUR</p>
-                    <a href="img/restaurant/menu_brasserie.pdf" target="_blank" class="btn btn-primary">Menu tradition</a>
+                    <a href="img/restaurant/menu_brasserie.pdf" target="_blank" class="btn btn-primary">Menu
+                        tradition</a>
                 </div>
                 <div class="col-md-4">
                     <h3>Dégustation</h3>
                     <p>De 14h00 à 18h30</p>
                     <p>A partir de 90.00 EUR</p>
-                    <a href="img/restaurant/menu_degustation.pdf" target="_blank" class="btn btn-primary">Menu Dégustation</a>
+                    <a href="img/restaurant/menu_degustation.pdf" target="_blank" class="btn btn-primary">Menu
+                        Dégustation</a>
                 </div>
                 <div class="col-md-4">
                     <h3>Restaurant</h3>
                     <p>De 18h30 à 21h</p>
                     <p>A partir de 75.00 EUR</p>
-                    <a href="img/restaurant/menu_restaurant.pdf" target="_blank" class="btn btn-primary">Menu Création</a>
+                    <a href="img/restaurant/menu_restaurant.pdf" target="_blank" class="btn btn-primary">Menu
+                        Création</a>
                 </div>
             </div>
         </div>

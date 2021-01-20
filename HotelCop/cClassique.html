@@ -22,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse" id="MenuBarToDevelop">
                 <ul class="navbar-nav">
-                    <li><a class="nav-item nav-link" href="index.html">Aperçu</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Accueil</a></li>
                     <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
                     <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
                     <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
@@ -39,21 +39,19 @@
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
                     <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
-                        <div class="col-lg-7">
+                        <div class="col-md-6">
                             <label class="label">Dates : </label>
                             <input type="text" id="inputDateFrom">
                             <input type="text" id="inputDateTo">
                         </div>
-                        <div class="col-lg-2">
-                            <select name="chambers" id="chambers" class="form-control" required>
+                        <div class="col-md-5">
+                            <select name="chambers" id="chambers" class="form-control">
                                 <option value="" selected>Chambres</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <select name="people" id="people" class="form-control" required>
+                            <select name="people" id="people" class="form-control">
                                 <option value="" selected>Personnes</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -65,16 +63,14 @@
                                 <option value="8">8</option>
                             </select>
                         </div>
-                        <div class="col-lg-1">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+                        <div class="col-md-1">
+                            <button class="btn btn-outline-light" type="submit">Réservation</button>
                         </div>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div id="margin-top"></div>
 
     <section id="photos" class="text-center">
         <div class="container-fluid justify-content-center">
@@ -147,7 +143,8 @@
                 <img class="mr-4" src="img/chambers/separator2.png">
                 <span>Informations pratiques</span>
                 <img class="ml-4" src="img/chambers/separator2.png">
-                <p>la chambre Classique Standard est faite sur mesure pour le bien-être et la détente. Elle dispose d'une atmosphère d'opulence et de chic à la française.</p>
+                <p>la chambre Classique Standard est faite sur mesure pour le bien-être et la détente. Elle dispose
+                    d'une atmosphère d'opulence et de chic à la française.</p>
                 <div class="row offset-3">
                     <div class="col-12 m-4">
                         <img src="img/chambers/surface2.png" alt="surface">
@@ -162,7 +159,7 @@
                         <span> Queen size</span>
                     </div>
                 </div>
-                <button type="button" onclick="fDetail()" id ="btnDetail" class="offset-4 mt-5">Détails</button>
+                <button type="button" onclick="fDetail()" id="btnDetail" class="offset-4 mt-5">Détails</button>
             </div>
             <div id="detailClas" class="container">
                 <div class="row details">
@@ -189,23 +186,25 @@
                     <div class="col-4">
                         <hr>
                         <p>Salle de bain</p>
-                        La salle de bain est équipée d’une douche séparée aux finitions nobles. Les lavabos et les murs en marbre et bois de Carrère
+                        La salle de bain est équipée d’une douche séparée aux finitions nobles. Les lavabos et les murs
+                        en marbre et bois de Carrère
                     </div>
                     <div class="col-4">
                         <hr>
                         <p>Tarif</p>
                     </div>
-        
+
                     <button type="button" class="offset-5 mt-5">Réservation</button>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
-<hr>
+    <hr>
     <section id="Classique" class="container">
         <h1>Chambre Classique Première</h1>
         <p class="justify-center m-4">
-            Les chambres de l’HôtelCop sont dotés d’une décoration personnalisée, des nuances douces, matières précieuses, élégance discrète.
+            Les chambres de l’HôtelCop sont dotés d’une décoration personnalisée, des nuances douces, matières
+            précieuses, élégance discrète.
         </p>
         <div class="row" id="idClasImg">
             <img class="col-6" src="img/chambers/classiqueRoom11.png" alt="Chambres classiques">
@@ -213,7 +212,8 @@
                 <img class="mr-4" src="img/chambers/separator2.png">
                 <span>Informations pratiques</span>
                 <img class="ml-4" src="img/chambers/separator2.png">
-                <p>ces chambres offrent des espaces généreux où que vous tourniez le regard, avec une belle hauteur de plafond et, pour la plupart, un balcon ou une terrasse privée.</p>
+                <p>ces chambres offrent des espaces généreux où que vous tourniez le regard, avec une belle hauteur de
+                    plafond et, pour la plupart, un balcon ou une terrasse privée.</p>
                 <div class="row offset-3">
                     <div class="col-12 m-4">
                         <img src="img/chambers/surface2.png" alt="">
@@ -228,7 +228,7 @@
                         <span> King size</span>
                     </div>
                 </div>
-                <button type="button" onclick="fDetail1()" id ="btnDetail1" class="offset-4 mt-5">Détails</button>
+                <button type="button" onclick="fDetail1()" id="btnDetail1" class="offset-4 mt-5">Détails</button>
             </div>
             <div id="detailClas1" class="container">
                 <div class="row details">
@@ -261,18 +261,19 @@
                         <hr>
                         <p>Tarif</p>
                     </div>
-        
+
                     <button type="button" class="offset-5 mt-5">Réservation</button>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
-<hr>
+    <hr>
     <section id="Classique" class="container">
         <h1>Chambre Classique Supérieure</h1>
         <p class="justify-center m-4">
             Raffinement au luxe discret.
-            les chambres Supérieures du HotelCop sont parmi les plus spacieuses de Paris dans leur catégorie, et probablement parmi les plus élégantes.
+            les chambres Supérieures du HotelCop sont parmi les plus spacieuses de Paris dans leur catégorie, et
+            probablement parmi les plus élégantes.
 
         </p>
         <div class="row" id="idClasImg">
@@ -282,7 +283,9 @@
                 <span>Informations pratiques</span>
                 <img class="ml-4" src="img/chambers/separator2.png">
                 <div>
-                    <p>Habillées de boiseries aux couleurs poudrées, de matières nobles des plus belles maisons parisiennes, de meubles louis XV, de tissus aux camaïeux de bleus, de grège, de gris, ou de rose, elle sont baignées d’une lumière nturelle omniprésente.</p>
+                    <p>Habillées de boiseries aux couleurs poudrées, de matières nobles des plus belles maisons
+                        parisiennes, de meubles louis XV, de tissus aux camaïeux de bleus, de grège, de gris, ou de
+                        rose, elle sont baignées d’une lumière nturelle omniprésente.</p>
                 </div>
                 <div class="row offset-3">
                     <div class="col-12 m-4">
@@ -298,7 +301,7 @@
                         <span> King size</span>
                     </div>
                 </div>
-                <button type="button" onclick="fDetail2()" id ="btnDetail2" class="offset-4 mt-5">Détails</button>
+                <button type="button" onclick="fDetail2()" id="btnDetail2" class="offset-4 mt-5">Détails</button>
             </div>
             <div id="detailClas2" class="container">
                 <div class="row details">
@@ -331,14 +334,14 @@
                         <hr>
                         <p>Tarif</p>
                     </div>
-        
+
                     <button type="button" class="offset-5 mt-5">Réservation</button>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
 
-    
+
 
     <section id="footer" class="text-center">
         <footer>
