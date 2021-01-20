@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CGV</title>
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
+                aria-controls="MenuBarToDevelop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuBarToDevelop">
+                <ul class="navbar-nav">
+                    <li><a class="nav-item nav-link" href="index.html">Aperçu</a></li>
+                    <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
+                    <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
+                    <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
+                    <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
+                    <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
+                    <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
+                </ul>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
+                        style="height: 16px; width: 24px;"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
+                        style="height: 16px; width: 24px;"></a>
+            </div>
+            <div class="w-100"></div>
+            <div class="container-fluid justify-content-center" id="MenuReservation">
+                <div class="row">
+                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                        <div class="col-lg-7">
+                            <label class="label">Dates : </label>
+                            <input type="text" id="inputDateFrom">
+                            <input type="text" id="inputDateTo">
+                        </div>
+                        <div class="col-lg-2">
+                            <select name="chambers" id="chambers" class="form-control" required>
+                                <option value="" selected>Chambres</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <select name="people" id="people" class="form-control" required>
+                                <option value="" selected>Personnes</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="margin-top"></div>
+
+    <section id="generalConditionsOfSale">
+        <div class="container-fluid justify-content-center">
+            <h1>Conditions générales de ventes</h1>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <hr>
+                    <p>Les termes utilis&eacute;s dans les pr&eacute;sentes comportant une majuscule sans qu&rsquo;ils
+                        aient pr&eacute;alablement &eacute;t&eacute; d&eacute;finis ont le sens qui leur est
+                        donn&eacute; ci-apr&egrave;s :</p>
+
+                    <p><b>&laquo; Client &raquo;</b> d&eacute;signe une personne physique, majeure, agissant pour ses
+                        besoins personnels et disposant de la pleine capacit&eacute; juridique de s&rsquo;engager au
+                        titre des pr&eacute;sentes.&nbsp;</p>
+
+                    <p><b>&laquo; Conditions de vente du tarif r&eacute;serv&eacute; &raquo;</b> d&eacute;signe les
+                        conditions particuli&egrave;res de chaque r&eacute;servation effectu&eacute;e par le Client.</p>
+
+                    <p><b>&laquo; Confirmation de r&eacute;servation &raquo;</b> d&eacute;signe le document
+                        r&eacute;capitulant les d&eacute;tails de la r&eacute;servation faite par le Client,
+                        envoy&eacute; par le site Internet ou l&rsquo;H&ocirc;tel au Client.</p>
+
+                    <p><b>&laquo; Demande de r&eacute;servation &raquo;</b> d&eacute;signe toute demande de
+                        r&eacute;servation de chambre d&rsquo;h&ocirc;tel effectu&eacute;e par le Client.</p>
+
+                    <p><b>&laquo; H&ocirc;tel &raquo;</b> d&eacute;signe l&rsquo;h&ocirc;tel HotelCop,
+                        exploit&eacute; par la SAS SOCIETE HOTELIERE HOTELCOP au capital de 00 000 &euro;, dont le
+                        si&egrave;ge social 1 avenue Montaigne &ndash; 75008 Paris, immatricul&eacute;e au RCS de
+                        Paris sous le num&eacute;ro 000&nbsp;000&nbsp;000.</p>
+
+                    <p><b>&laquo; Partenaires &raquo;</b> d&eacute;signe tous prestataires de services ayant conclu un
+                        contrat de prestation de services ou accord de partenariat avec l&rsquo;H&ocirc;tel.</p>
+
+                    <p><b>&laquo; Service &raquo; </b>d&eacute;signe tout service de r&eacute;servation de chambre
+                        d&rsquo;h&ocirc;tel effectu&eacute;e par le Client sur le site Internet de l&rsquo;H&ocirc;tel.
+                    </p>
+
+                    <p><b>&laquo; Site Internet de l&rsquo;H&ocirc;tel &raquo; </b>d&eacute;signe le site internet
+                        d&eacute;di&eacute; &agrave; l&rsquo;H&ocirc;tel accessible &agrave; l&rsquo;adresse suivante
+                        https://jleforestier.fr/HotelCop.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 1 &ndash; Champ d&rsquo;application</b></p>
+
+                    <p>Les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente s&rsquo;appliquent, sans
+                        restriction ni r&eacute;serve &agrave; tout achat des services de r&eacute;servation de chambres
+                        d&rsquo;h&ocirc;tel et de prestations annexes (&lsquo;les Services&lsquo;) propos&eacute;s par
+                        l&rsquo;H&ocirc;tel (&lsquo;le Prestataire&lsquo; ou l&rsquo;&laquo;H&ocirc;tel&raquo;) aux
+                        consommateurs et clients non professionnels (&lsquo;Les Clients ou le Client&lsquo;) sur le site
+                        Internet de l&rsquo;H&ocirc;tel.<br />
+                        Les caract&eacute;ristiques principales des Services, sont pr&eacute;sent&eacute;es sur le site
+                        internet de l&rsquo;H&ocirc;tel.<br />
+                        Le Client est tenu d&rsquo;en prendre connaissance avant toute r&eacute;servation. Le choix et
+                        l&rsquo;achat d&rsquo;un Service est de la seule responsabilit&eacute; du Client.</p>
+
+                    <p><b>Le Client d&eacute;clare&nbsp;:&nbsp;</b></p>
+
+                    <p>● Avoir la pleine capacit&eacute; juridique de s&rsquo;engager au titre des pr&eacute;sentes
+                        Conditions G&eacute;n&eacute;rales de Ventes.</p>
+
+                    <p>● Effectuer la r&eacute;servation de chambres d&rsquo;h&ocirc;tel et de prestations annexes pour
+                        ses besoins personnels.</p>
+
+                    <p>● Etre en mesure de sauvegarder et imprimer les pr&eacute;sentes Conditions
+                        G&eacute;n&eacute;rales de ventes.<br />
+                        Les coordonn&eacute;es de l&rsquo;H&ocirc;tel sont les suivantes :</p>
+
+                    <p>H&ocirc;tel HotelCop</p>
+
+                    <p>1 avenue Montaigne</p>
+
+                    <p>75008 Paris</p>
+
+                    <p>Ces conditions s&rsquo;appliquent &agrave; l&rsquo;exclusion de toutes autres conditions, et
+                        notamment celles applicables pour d&rsquo;autres circuits de commercialisation des Services.</p>
+
+                    <p>Il est port&eacute; &agrave; la connaissance du Client que l&rsquo;H&ocirc;tel conclut des
+                        accords de partenariat avec des prestataires de voyage tiers afin de lui permettre, en utilisant
+                        les services propos&eacute;s par ces partenaires sur leur site internet, de rechercher,
+                        s&eacute;lectionner et r&eacute;server des chambres dans l&rsquo;H&ocirc;tel. Toute
+                        r&eacute;servation de chambres d&rsquo;h&ocirc;tel r&eacute;alis&eacute;e dans ces conditions
+                        implique la consultation et l&rsquo;acceptation compl&egrave;te et sans r&eacute;serve par le
+                        Client des conditions particuli&egrave;res du prestataire, des conditions de vente du tarif
+                        r&eacute;serv&eacute; et des pr&eacute;sentes conditions g&eacute;n&eacute;rales de vente. Le
+                        Client d&eacute;clare avoir obtenu de l&rsquo;H&ocirc;tel toutes les informations
+                        n&eacute;cessaires et disponibles sur le site Internet.</p>
+
+                    <p>Les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente sont accessibles &agrave; tout
+                        moment sur le site Internet de l&rsquo;H&ocirc;tel et pr&eacute;vaudront, le cas
+                        &eacute;ch&eacute;ant, sur toute autre version ou tout autre document contradictoire.<br />
+                        Sauf preuve contraire, les donn&eacute;es enregistr&eacute;es dans le syst&egrave;me
+                        informatique du prestataire constituent la preuve de l&rsquo;ensemble des transactions conclues
+                        avec le Client. Ainsi, la saisie des informations bancaires, l&rsquo;acceptation des Conditions
+                        G&eacute;n&eacute;rales de Vente, des Conditions de Vente du tarif ou de la Demande de
+                        r&eacute;servation, &agrave; entre l&rsquo;H&ocirc;tel et le Client la m&ecirc;me valeur
+                        qu&rsquo;une signature manuscrite sur support papier. Les Registres informatis&eacute;s
+                        conserv&eacute;s dans les syst&egrave;mes informatiques de l&rsquo;H&ocirc;tel seront
+                        conserv&eacute;s dans des conditions raisonnables de s&eacute;curit&eacute; et
+                        consid&eacute;r&eacute;s comme des preuves de communication, commande et paiement intervenues
+                        entre l&rsquo;H&ocirc;tel et le Client.</p>
+
+                    <p>L&rsquo;H&ocirc;tel assure la conservation de l&rsquo;&eacute;crit constatant la conclusion du
+                        contrat sous format &eacute;lectronique ou papier pendant une dur&eacute;e maximale de 5
+                        ans.&nbsp;</p>
+
+                    <p>Le Client est inform&eacute; que son adresse IP est enregistr&eacute;e au moment de la
+                        r&eacute;servation.<br />
+                        Conform&eacute;ment &agrave; la loi Informatique et Libert&eacute;s du 6 janvier 1978, le Client
+                        dispose, &agrave; tout moment, d&rsquo;un droit d&rsquo;acc&egrave;s, de rectification, et
+                        d&rsquo;opposition &agrave; l&rsquo;ensemble de ses donn&eacute;es personnelles en
+                        &eacute;crivant par courrier et en justifiant de son identit&eacute; &agrave;&nbsp;: H&ocirc;tel
+                        HotelCop - 1 avenue Montaigne &ndash; 75008 Paris</p>
+
+                    <p>Les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente comprennent &eacute;galement la
+                        Charte sur les Donn&eacute;es Personnelles.</p>
+
+                    <p>Le Client d&eacute;clare avoir pris connaissance des pr&eacute;sentes Conditions
+                        G&eacute;n&eacute;rales de Ventes (y compris la Charte sur les Donn&eacute;es Personnelles) et
+                        les avoir accept&eacute;es en cochant la case pr&eacute;vue &agrave; cet effet avant la mise en
+                        &oelig;uvre de la proc&eacute;dure de r&eacute;servation en ligne ainsi que des Conditions
+                        G&eacute;n&eacute;rales d&rsquo;Utilisation du site internet de l&rsquo;H&ocirc;tel.</p>
+
+                    <p>La validation de la r&eacute;servation de Services par le Client vaut acceptation sans
+                        restriction ni r&eacute;serve des pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente
+                        (y compris la Charte sur les Donn&eacute;es Personnelles).</p>
+
+                    <p>Le Client reconna&icirc;t avoir la capacit&eacute; requise pour contracter et acqu&eacute;rir les
+                        Services propos&eacute;s sur le site internet de l&rsquo;H&ocirc;tel.</p>
+
+                    <p>Ces Conditions G&eacute;n&eacute;rales de Vente pouvant faire l&rsquo;objet de modifications
+                        ult&eacute;rieures, la version applicable &agrave; l&rsquo;achat du Client est celle en vigueur
+                        sur le site internet &agrave; la date de la r&eacute;servation.</p>
+
+                    <p>Les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente sont applicables pendant la
+                        dur&eacute;e de mise en ligne des services propos&eacute;es par l&rsquo;H&ocirc;tel sur le Site
+                        internet de l&rsquo;H&ocirc;tel. L&rsquo;H&ocirc;tel se r&eacute;serve le droit de fermer
+                        temporairement ou d&eacute;finitivement l&rsquo;acc&egrave;s de son Site internet.</p>
+
+                    <p><br />
+                        <b>ARTICLE 2 &ndash; R&eacute;servations</b>
+                    </p>
+
+                    <p>Le Client s&eacute;lectionne sur le site Internet les services qu&rsquo;il d&eacute;sire
+                        r&eacute;server, selon les modalit&eacute;s suivantes :</p>
+
+                    <p>1. S&eacute;lection du type de chambre et du tarif</p>
+
+                    <p>2. S&eacute;lection des prestations annexes le cas &eacute;ch&eacute;ant</p>
+
+                    <p>3. V&eacute;rification et validation du d&eacute;tail de la r&eacute;servation, du montant total
+                        de la r&eacute;servation, des conditions du tarif</p>
+
+                    <p>4. Indication de ses coordonn&eacute;es</p>
+
+                    <p>5. Saisie des coordonn&eacute;es de sa carte bancaire en cas de garantie ou de pr&eacute;paiement
+                    </p>
+
+                    <p>6. Consultation et acceptation des conditions g&eacute;n&eacute;rales de vente et des conditions
+                        du tarif s&eacute;lectionn&eacute; pr&eacute;alablement &agrave; la validation de sa
+                        r&eacute;servation</p>
+
+                    <p>7. Validation de sa r&eacute;servation</p>
+
+                    <p>Le Client reconnait avoir pris connaissance de la nature, la destination et les modalit&eacute;s
+                        de r&eacute;servation des Services propos&eacute;es par l&rsquo;H&ocirc;tel et avoir
+                        sollicit&eacute; et obtenu les informations n&eacute;cessaires pour effectuer sa
+                        r&eacute;servation en toute connaissance de cause. Il est seul responsable de son choix de
+                        services et de leur ad&eacute;quation &agrave; ses besoins, de telle sorte que la
+                        responsabilit&eacute; de l&rsquo;H&ocirc;tel ne peut &ecirc;tre recherch&eacute;e &agrave; cet
+                        &eacute;gard.</p>
+
+                    <p>Le Client s&rsquo;engage &agrave; compl&eacute;ter les informations demand&eacute;es sur la
+                        demande de r&eacute;servation et atteste la v&eacute;racit&eacute; et l&rsquo;exactitude des
+                        informations transmises.</p>
+
+                    <p>Les informations contractuelles sont pr&eacute;sent&eacute;es en langue fran&ccedil;aise et font
+                        l&rsquo;objet d&rsquo;une confirmation au plus tard au moment de la validation de la
+                        r&eacute;servation par le Client.</p>
+
+                    <p>Pour les r&eacute;servations pass&eacute;es exclusivement sur internet, l&rsquo;enregistrement
+                        d&rsquo;une r&eacute;servation sur le site du Prestataire est r&eacute;alis&eacute; lorsque le
+                        Client accepte les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente en cochant la
+                        case pr&eacute;vue &agrave; cet effet et valide sa r&eacute;servation. Le Client a la
+                        possibilit&eacute; de v&eacute;rifier le d&eacute;tail de sa r&eacute;servation, son prix total
+                        et de corriger d&rsquo;&eacute;ventuelles erreurs avant de confirmer son acceptation (article
+                        1127-2 du Code Civil). Cette validation implique l&rsquo;acceptation de
+                        l&rsquo;int&eacute;gralit&eacute; des pr&eacute;sentes Conditions G&eacute;n&eacute;rales de
+                        Vente et constituent une preuve du contrat de vente.</p>
+
+                    <p>Il appartient donc au Client de v&eacute;rifier l&rsquo;exactitude de la r&eacute;servation et de
+                        signaler imm&eacute;diatement toute erreur.</p>
+
+                    <p>La vente de Services ne sera consid&eacute;r&eacute;e comme d&eacute;finitive
+                        qu&rsquo;apr&egrave;s l&rsquo;envoi au Client de la confirmation de l&rsquo;acceptation de la
+                        r&eacute;servation par le Prestataire, par courrier &eacute;lectronique et apr&egrave;s
+                        encaissement par celui-ci de l&rsquo;int&eacute;gralit&eacute; du prix.</p>
+
+                    <p>Toute r&eacute;servation pass&eacute;e sur le site internet de l&rsquo;H&ocirc;tel constitue la
+                        formation d&rsquo;un contrat conclu &agrave; distance entre le Client et le Prestataire.</p>
+
+                    <p>L&rsquo;H&ocirc;tel se r&eacute;serve le droit d&rsquo;annuler ou de refuser toute
+                        r&eacute;servation d&rsquo;un Client avec lequel il existerait un litige relatif au paiement
+                        d&rsquo;une r&eacute;servation ant&eacute;rieure.</p>
+
+                    <p>Chaque r&eacute;servation est nominative et ne peut en aucun cas &ecirc;tre c&eacute;d&eacute;e
+                        &agrave; un tiers.</p>
+
+                    <p>Annulation d&rsquo;une r&eacute;servation au tarif Flexible&nbsp;:</p>
+
+                    <p>En cas d&rsquo;annulation de la r&eacute;servation au tarif Flexible par le Client apr&egrave;s
+                        son acceptation par l&rsquo;H&ocirc;tel moins de 24 heures avant la date pr&eacute;vue de
+                        s&eacute;jour, pour quelque raison que ce soit, une somme correspondant au montant total de la
+                        1&egrave;re nuit&eacute;e sera de plein droit acquise au Prestataire et factur&eacute;e au
+                        Client, &agrave; titre de dommages et int&eacute;r&ecirc;ts, en r&eacute;paration du
+                        pr&eacute;judice subi.</p>
+
+                    <p>Annulation / Modification d&rsquo;une r&eacute;servation au tarif Non Annulable Non
+                        Remboursable&nbsp;:</p>
+
+                    <p>En cas d&rsquo;annulation ou modification de la r&eacute;servation au tarif Non annulable non
+                        remboursable par le Client, pour quelque raison que ce soit, une somme correspondant &agrave;
+                        100% du montant total pr&eacute;pay&eacute; sera de plein droit acquise au Prestataire et
+                        factur&eacute;e au Client. Il en sera de m&ecirc;me en cas de non pr&eacute;sentation du Client
+                        &agrave; la date pr&eacute;vue de son arriv&eacute;e.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 3 &ndash; TARIFS</b></p>
+
+                    <p>Les Services propos&eacute;s par le Prestataire sont fournis aux tarifs en vigueur sur le site
+                        internet de l&rsquo;H&ocirc;tel lors de l&rsquo;enregistrement de la r&eacute;servation par le
+                        Prestataire. Les prix sont exprim&eacute;s en Euros, HT et TTC.</p>
+
+                    <p>Les tarifs tiennent compte d&rsquo;&eacute;ventuelles r&eacute;ductions qui seraient consenties
+                        par le Prestataire dans les conditions pr&eacute;cis&eacute;es sur le site internet de
+                        l&rsquo;H&ocirc;tel.</p>
+
+                    <p>Ces tarifs sont fermes et non r&eacute;visables pendant leur p&eacute;riode de validit&eacute;,
+                        telle qu&rsquo;indiqu&eacute; sur le site internet de l&rsquo;H&ocirc;tel, le Prestataire se
+                        r&eacute;servant le droit, hors cette p&eacute;riode de validit&eacute;, de modifier les prix
+                        &agrave; tout moment.</p>
+
+                    <p>Les tarifs sont indiqu&eacute;s avant et lors de la r&eacute;servation faite par le Client. Ils
+                        s&rsquo;entendent par chambre pour le nombre de personnes et la date s&eacute;lectionn&eacute;e.
+                    </p>
+
+                    <p>Les tarifs sont confirm&eacute;s au Client en montant TTC (hors Taxes de s&eacute;jour) dans la
+                        devise commerciale de l&rsquo;H&ocirc;tel. Ils tiennent compte de la TVA au taux applicable au
+                        jour de la r&eacute;servation ; tout changement du taux applicable &agrave; la TVA sera
+                        automatiquement r&eacute;percut&eacute; sur les tarifs indiqu&eacute;s &agrave; la date de
+                        facturation. Il sera de m&ecirc;me de toute modification ou instauration de nouvelles taxes
+                        l&eacute;gales ou r&eacute;glementaires impos&eacute;es par les Autorit&eacute;s
+                        comp&eacute;tentes.</p>
+
+                    <p>Les tarifs ne comprennent pas la Taxe de s&eacute;jour r&eacute;glable directement sur place
+                        aupr&egrave;s de l&rsquo;H&ocirc;tel.</p>
+
+                    <p>Le Client s&rsquo;engage &agrave; r&eacute;gler ces diverses taxes sans contestation aucune
+                        aupr&egrave;s de l&rsquo;H&ocirc;tel.</p>
+
+                    <p>Le paiement demand&eacute; au Client correspond au montant total de l&rsquo;achat, &agrave;
+                        l&rsquo;exception de cette Taxe.</p>
+
+                    <p>Sauf mention contraire sur le Site, les prestations annexes (petit-d&eacute;jeuner, etc&hellip;)
+                        ne sont pas incluses dans le prix.</p>
+
+                    <p>La conversion en monnaie &eacute;trang&egrave;re est donn&eacute;e &agrave; titre indicatif et
+                        non contractuelle. Si un tarif implique un paiement directement &agrave; l&rsquo;H&ocirc;tel
+                        lors de l&rsquo;arriv&eacute;e ou du d&eacute;part du Client et que la monnaie du Client
+                        n&rsquo;est pas la m&ecirc;me que celle de l&rsquo;H&ocirc;tel, le tarif d&eacute;bit&eacute;
+                        par l&rsquo;H&ocirc;tel est susceptible d&rsquo;&ecirc;tre diff&eacute;rent de celui qui a
+                        &eacute;t&eacute; communique lors de la r&eacute;servation, compte tenu de
+                        l&rsquo;&eacute;volution du taux de change entre la date de r&eacute;servation et la date de
+                        paiement.</p>
+
+                    <p>Une facture est &eacute;tablie par le Prestataire et remise au Client lors de la fourniture des
+                        Services r&eacute;serv&eacute;s.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 4 &ndash; MODALITES de paiement</b></p>
+
+                    <p>En cas de paiement au comptant au jour de la r&eacute;servation (Tarif Non Annulable Non
+                        Remboursable)&nbsp;:</p>
+
+                    <p>Le prix est payable comptant, en totalit&eacute; au jour de la confirmation de la
+                        r&eacute;servation par le Client, selon les modalit&eacute;s pr&eacute;cis&eacute;es &agrave;
+                        l&rsquo;article &laquo;R&eacute;servations&raquo; ci-dessus, par voie de paiement
+                        s&eacute;curis&eacute; :</p>
+
+                    <p>&ndash; par cartes bancaires : Visa, MasterCard, American Express, autres cartes bleues (Ecard
+                        bleue).</p>
+
+                    <p>Lors de la r&eacute;servation, le Client communique ses coordonn&eacute;es bancaires en
+                        pr&eacute;cisant le nom de la carte bancaire, le num&eacute;ro de la carte bancaire, la date de
+                        validit&eacute; (la carte bancaire doit &ecirc;tre valable jusqu&rsquo;&agrave; la date de fin
+                        du s&eacute;jour) et le cryptogramme.</p>
+
+                    <p>Les donn&eacute;es de paiement sont &eacute;chang&eacute;es en mode crypt&eacute; gr&acirc;ce au
+                        protocole SSL.</p>
+
+                    <p>Le Client se pr&eacute;sentera &agrave; l&rsquo;H&ocirc;tel avec la carte bancaire lui ayant
+                        permis de r&eacute;aliser le paiement de la r&eacute;servation. Il pourra lui &ecirc;tre
+                        demand&eacute; de pr&eacute;senter une pi&egrave;ce d&rsquo;identit&eacute; dans le cadre des
+                        proc&eacute;dures de pr&eacute;vention contre la fraude aux cartes bancaires.</p>
+
+                    <p>Le Prestataire ne sera pas tenu de proc&eacute;der &agrave; la fourniture des Services
+                        command&eacute;s par le Client si le prix ne lui a pas &eacute;t&eacute; pr&eacute;alablement
+                        r&eacute;gl&eacute; en totalit&eacute; dans les conditions et ci-dessus indiqu&eacute;es.</p>
+
+                    <p>Les paiements effectu&eacute;s par le Client ne seront consid&eacute;r&eacute;s comme
+                        d&eacute;finitifs qu&rsquo;apr&egrave;s encaissement effectif des sommes dues par le
+                        Prestataire.</p>
+
+                    <p>En cas de paiement au comptant &agrave; la fourniture des services (Tarif Flexible)&nbsp;:</p>
+
+                    <p>Le prix est payable comptant, en totalit&eacute; au jour de la fourniture des Services
+                        r&eacute;serv&eacute;s dans les conditions d&eacute;finies &agrave; l&rsquo;article
+                        &laquo;Fourniture des Services&raquo; ci-apr&egrave;s et comme indiqu&eacute; sur la facture
+                        remise au Client, par voie de paiement s&eacute;curis&eacute; :</p>
+
+                    <p>&ndash; par cartes bancaires : Visa, MasterCard, American Express, autres cartes bleues (Ecard
+                        bleue).</p>
+
+                    <p>Les donn&eacute;es de paiement sont &eacute;chang&eacute;es en mode crypt&eacute; gr&acirc;ce au
+                        protocole SSL.</p>
+
+                    <p>L&rsquo;H&ocirc;tel demandera au Client, lors de son arriv&eacute;e, de r&eacute;gler un
+                        d&eacute;p&ocirc;t de garantie ou d&rsquo;autoriser le d&eacute;bit de sa carte bancaire, en vue
+                        de garantir le paiement des sommes correspondant aux prestations consomm&eacute;es sur place.
+                    </p>
+
+                    <p>Le Client communiquera alors ses coordonn&eacute;es bancaires en pr&eacute;cisant le nom de la
+                        carte bancaire, le num&eacute;ro de la carte bancaire, la date de validit&eacute; (la carte
+                        bancaire doit &ecirc;tre valable jusqu&rsquo;&agrave; la date de fin du s&eacute;jour) et le
+                        cryptogramme.</p>
+
+                    <p>Il pourra &ecirc;tre demand&eacute; au Client de pr&eacute;senter une pi&egrave;ce
+                        d&rsquo;identit&eacute; dans le cadre des proc&eacute;dures de pr&eacute;vention contre la
+                        fraude aux cartes bancaires.</p>
+
+                    <p>Le Prestataire ne sera pas tenu de proc&eacute;der &agrave; la fourniture des Services
+                        command&eacute;s par le Client si le prix ne lui a pas &eacute;t&eacute; pr&eacute;alablement
+                        r&eacute;gl&eacute; en totalit&eacute; dans les conditions et ci-dessus indiqu&eacute;es.</p>
+
+                    <p>Les paiements effectu&eacute;s par le Client ne seront consid&eacute;r&eacute;s comme
+                        d&eacute;finitifs qu&rsquo;apr&egrave;s encaissement effectif des sommes dues par le
+                        Prestataire.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 5 &ndash; Fourniture des Prestations</b></p>
+
+                    <p>Les Services r&eacute;serv&eacute;s par le Client, qui comprennent les prestations de
+                        r&eacute;servation de chambres d&rsquo;h&ocirc;tel et de prestations annexes seront fournis
+                        selon les modalit&eacute;s suivantes, dans les conditions pr&eacute;vues aux pr&eacute;sentes
+                        Conditions G&eacute;n&eacute;rales de Vente compl&eacute;t&eacute;es par les Conditions de vente
+                        du Tarif dont le Client a pris connaissance et qu&rsquo;il a accept&eacute;es lors de sa
+                        r&eacute;servation sur le site Internet de l&rsquo;H&ocirc;tel.</p>
+
+                    <p>A son arriv&eacute;e, il sera demand&eacute; au Client de pr&eacute;senter sa pi&egrave;ce
+                        d&rsquo;identit&eacute; afin de s&rsquo;assurer de son obligation de compl&eacute;ter une Fiche
+                        de Police.</p>
+
+                    <p>L&rsquo;H&ocirc;tel est un espace enti&egrave;rement non-fumeur. Le client sera tenu responsable
+                        des dommages directs et/ou indirects, cons&eacute;cutifs, r&eacute;sultant de l&rsquo;acte de
+                        fumer dans l&rsquo;H&ocirc;tel. Il sera par cons&eacute;quent, redevable de
+                        l&rsquo;int&eacute;gralit&eacute; du montant des frais de nettoyage et de remise en
+                        l&rsquo;&eacute;tat initial de l&rsquo;&eacute;l&eacute;ment ou l&rsquo;espace endommag&eacute;.
+                    </p>
+
+                    <p>Les animaux, d&egrave;s lors qu&rsquo;ils sont tenus en laisse ou en cage dans les parties
+                        communes de l&rsquo;&eacute;tablissement, peuvent &ecirc;tre accept&eacute;s selon la politique
+                        en vigueur de l&rsquo;H&ocirc;tel moyennant le paiement d&rsquo;un suppl&eacute;ment. Pour des
+                        raisons d&rsquo;hygi&egrave;ne, les animaux ne sont pas admis dans les salles de restauration.
+                    </p>
+
+                    <p>Les effets personnels du Client laiss&eacute;s dans la chambre de l&rsquo;H&ocirc;tel, notamment
+                        &agrave; l&rsquo;ext&eacute;rieur du coffre-fort ou dans les espaces publics de
+                        l&rsquo;H&ocirc;tel rel&egrave;vent de son enti&egrave;re responsabilit&eacute;.
+                        L&rsquo;H&ocirc;tel ne saurait &ecirc;tre tenu responsable de la perte, du vol, des
+                        d&eacute;t&eacute;riorations ou des dommages caus&eacute;s auxdits effets.</p>
+
+                    <p>Le client accepte et s&rsquo;engage &agrave; utiliser la chambre en bon p&egrave;re de famille.
+                        Aussi tout comportement contraire aux bonnes m&oelig;urs et &agrave; l&rsquo;ordre public
+                        am&egrave;nera l&rsquo;H&ocirc;tel &agrave; demander au Client de quitter
+                        l&rsquo;&eacute;tablissement sans aucune indemnit&eacute; et ou sans aucun remboursement si un
+                        r&egrave;glement a d&eacute;j&agrave; &eacute;t&eacute; effectu&eacute;. Dans le cas o&ugrave;
+                        aucun r&egrave;glement n&rsquo;a encore &eacute;t&eacute; effectu&eacute;, le client devra
+                        s&rsquo;acquitter du prix des nuit&eacute;es consomm&eacute;es avant de quitter
+                        l&rsquo;&eacute;tablissement.</p>
+
+                    <p>Le Client sera tenu responsable de l&rsquo;int&eacute;gralit&eacute; des dommages directs et/ou
+                        indirects, cons&eacute;cutifs, dont il est l&rsquo;auteur, constat&eacute;s dans la chambre
+                        r&eacute;serv&eacute;e ou qu&rsquo;il pourrait causer au sein de l&rsquo;H&ocirc;tel. En
+                        cons&eacute;quence, il s&rsquo;engage &agrave; indemniser l&rsquo;H&ocirc;tel &agrave; hauteur
+                        du montant desdits dommages, sans pr&eacute;judice des dommages et int&eacute;r&ecirc;ts qui
+                        pourraient &ecirc;tre dus, frais de proc&eacute;dure et d&rsquo;avocats engag&eacute;s par
+                        l&rsquo;H&ocirc;tel.</p>
+
+                    <p>Un acc&egrave;s WIFI (payant ou non) permettant aux clients de se connecter &agrave; internet
+                        peut &ecirc;tre propos&eacute; selon la Politique en vigueur de l&rsquo;H&ocirc;tel. Le client
+                        s&rsquo;engage &agrave; ce que les ressources informatiques mises &agrave; sa disposition par
+                        l&rsquo;h&ocirc;tel ne soient en aucune mani&egrave;re utilis&eacute;es &agrave; des fins de
+                        reproduction, de repr&eacute;sentation, de mise &agrave; disposition ou de communication au
+                        public d&rsquo;&oelig;uvres ou d&rsquo;objets prot&eacute;g&eacute;s par un droit d&rsquo;auteur
+                        ou par un droit voisin, tels que des textes, images, photographies, &oelig;uvres musicales,
+                        &oelig;uvres audiovisuelles, logiciels et jeux vid&eacute;o, sans l&rsquo;autorisation des
+                        titulaires des droits pr&eacute;vus aux livres Ier et II du code de la propri&eacute;t&eacute;
+                        intellectuelle lorsque cette autorisation est requise. Si le client ne se conforme pas aux
+                        obligations pr&eacute;cit&eacute;es, il risquerait de se voir reprocher un d&eacute;lit de
+                        contrefa&ccedil;on (article L.335-3 du code de la propri&eacute;t&eacute; intellectuelle),
+                        sanctionn&eacute; par une amende de 300.000 euros et de trois ans d&rsquo;emprisonnement. Le
+                        client est par ailleurs tenu de se conformer &agrave; la politique de s&eacute;curit&eacute; du
+                        fournisseur d&rsquo;acc&egrave;s internet de l&rsquo;h&ocirc;tel, y compris aux r&egrave;gles
+                        d&rsquo;utilisation des moyens de s&eacute;curisation mis en &oelig;uvre dans le but de
+                        pr&eacute;venir l&rsquo;utilisation illicite des ressources informatiques et de s&rsquo;abstenir
+                        de tout acte portant atteinte &agrave; l&rsquo;efficacit&eacute; de ces moyens.</p>
+
+                    <p>Sauf disposition expresse contraire, la Chambre sera mise &agrave; la disposition du Client le
+                        jour de son arriv&eacute;e &agrave; 14 heures et le Client quittera la chambre le jour de son
+                        d&eacute;part &agrave; 12 heures. A d&eacute;faut, une nuit&eacute;e suppl&eacute;mentaire sera
+                        factur&eacute;e au Client. Le Client devra v&eacute;rifier sa date de d&eacute;part. En cas de
+                        d&eacute;part anticip&eacute;, des frais &eacute;quivalents &agrave; une nuit&eacute;e seront
+                        imput&eacute;s, sauf si le Client en a avis&eacute; l&rsquo;H&ocirc;tel au moins 24 heures avant
+                        son d&eacute;part.</p>
+
+                    <p>Le Prestataire s&rsquo;engage &agrave; faire ses meilleurs efforts pour fournir les Services
+                        r&eacute;serv&eacute;s par le Client, dans le cadre d&rsquo;une obligation de moyen.</p>
+
+                    <p>Le Client disposera d&rsquo;un d&eacute;lai de 8 jours &agrave; compter de sa date de
+                        d&eacute;part de l&rsquo;H&ocirc;tel pour &eacute;mettre, par &eacute;crit, des r&eacute;serves
+                        ou r&eacute;clamations concernant la fourniture des Services, avec tous les justificatifs y
+                        aff&eacute;rents, aupr&egrave;s de l&rsquo;H&ocirc;tel.</p>
+
+                    <p>Aucune r&eacute;clamation ne pourra &ecirc;tre valablement accept&eacute;e en cas de non-respect
+                        de ces formalit&eacute;s et d&eacute;lais par le Client.</p>
+
+                    <p>A d&eacute;faut de r&eacute;serves ou r&eacute;clamations express&eacute;ment &eacute;mises dans
+                        ce d&eacute;lai par le Client lors de la r&eacute;ception des Services, ceux-ci seront
+                        r&eacute;put&eacute;s conformes &agrave; la r&eacute;servation, en quantit&eacute; et
+                        qualit&eacute;.</p>
+
+                    <p>En cas de d&eacute;logement&nbsp;:</p>
+
+                    <p>En cas d&rsquo;&eacute;v&egrave;nement exceptionnel, cas de force majeure ou
+                        d&rsquo;impossibilit&eacute; de mettre la chambre r&eacute;serv&eacute;e &agrave; disposition du
+                        Client, l&rsquo;H&ocirc;tel de r&eacute;serve la possibilit&eacute; de faire h&eacute;berger
+                        totalement ou partiellement le Client dans un h&ocirc;tel de cat&eacute;gorie
+                        &eacute;quivalente, pour des prestations de m&ecirc;me nature et sous r&eacute;serve de
+                        l&rsquo;accord pr&eacute;alable du Client.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 6 &ndash; DROIT DE RETRACTATION</b></p>
+
+                    <p>Conform&eacute;ment &agrave; l&rsquo;article L 221-28 du Code de la consommation, le Client ne
+                        dispose pas du droit de r&eacute;tractation pr&eacute;vu &agrave; l&rsquo;article L 221-18 du
+                        Code de la consommation, compte tenu de la nature des services fournis.</p>
+
+                    <p>Le contrat est donc conclu de fa&ccedil;on d&eacute;finitive d&egrave;s la passation de la
+                        r&eacute;servation par le Client selon les modalit&eacute;s pr&eacute;cis&eacute;es aux
+                        pr&eacute;sentes Conditions g&eacute;n&eacute;rales de Vente.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 7 &ndash; Responsabilit&eacute; du Prestataire &ndash; Garantie</b></p>
+
+                    <p>Le Prestataire garantit, conform&eacute;ment aux dispositions l&eacute;gales et sans paiement
+                        compl&eacute;mentaire, le Client, contre tout d&eacute;faut de conformit&eacute; ou vice
+                        cach&eacute;, provenant d&rsquo;un d&eacute;faut de r&eacute;alisation des Services
+                        r&eacute;serv&eacute;s et effectivement pay&eacute;s dans les conditions et selon les
+                        modalit&eacute;s d&eacute;finies aux pr&eacute;sentes Conditions G&eacute;n&eacute;rales de
+                        Vente.</p>
+
+                    <p>Les Services fournis par l&rsquo;interm&eacute;diaire du site Internet de l&rsquo;H&ocirc;tel
+                        sont conformes &agrave; la r&eacute;glementation en vigueur en France. La responsabilit&eacute;
+                        du Prestataire ne saurait &ecirc;tre engag&eacute;e en cas de non-respect de la
+                        l&eacute;gislation du pays dans lequel les Services sont fournis, qu&rsquo;il appartient au
+                        Client, qui est seul responsable du choix des Services demand&eacute;s, de v&eacute;rifier.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 8 &ndash; Informatiques et Libert&eacute;s</b></p>
+
+                    <p>En application de la loi 78-17 du 6 janvier 1978, il est rappel&eacute; que les donn&eacute;es
+                        nominatives qui sont demand&eacute;s au Client sont n&eacute;cessaires au traitement de sa
+                        r&eacute;servation et &agrave; l&rsquo;&eacute;tablissement des factures, notamment.</p>
+
+                    <p>Ces donn&eacute;es sont trait&eacute;es et destin&eacute;es &agrave; l&rsquo;H&ocirc;tel et
+                        peuvent &ecirc;tre communiqu&eacute;es &agrave; ses &eacute;ventuels partenaires charg&eacute;s
+                        de l&rsquo;ex&eacute;cution, du traitement, de la gestion et du paiement des r&eacute;servations
+                        ainsi que du s&eacute;jour du Client.</p>
+
+                    <p>Par ailleurs, l&rsquo;H&ocirc;tel est susceptible d&rsquo;adresser par courrier
+                        &eacute;lectronique &agrave; ses clients sa lettre d&rsquo;informations, des offres
+                        promotionnelles, un questionnaire de satisfaction suite &agrave; son s&eacute;jour
+                        h&ocirc;telier.</p>
+
+                    <p>Le traitement des informations communiqu&eacute;es par l&rsquo;interm&eacute;diaire du site
+                        internet de l&rsquo;H&ocirc;tel a fait l&rsquo;objet d&rsquo;une d&eacute;claration
+                        aupr&egrave;s de la CNIL.</p>
+
+                    <p>Le Client dispose, conform&eacute;ment aux r&eacute;glementations nationales et
+                        europ&eacute;ennes en vigueur d&rsquo;un droit d&rsquo;acc&egrave;s permanent, de modification,
+                        de rectification et d&rsquo;opposition s&rsquo;agissant des informations le concernant.</p>
+
+                    <p>Ce droit peut &ecirc;tre exerc&eacute; dans les conditions et selon les modalit&eacute;s
+                        d&eacute;finies sur le site internet de l&rsquo;H&ocirc;tel.</p>
+
+                    <p>La politique de protection des donn&eacute;es personnelles est consultable dans la Charte de
+                        Protection des donn&eacute;es personnelles consultable sur le Site Internet de
+                        l&rsquo;H&ocirc;tel.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 9 &ndash; Propri&eacute;t&eacute; intellectuelle</b></p>
+
+                    <p>Le contenu du site internet de l&rsquo;H&ocirc;tel est la propri&eacute;t&eacute; du Vendeur et
+                        de ses partenaires et est prot&eacute;g&eacute; par les lois fran&ccedil;aises et
+                        internationales relatives &agrave; la propri&eacute;t&eacute; intellectuelle.</p>
+
+                    <p>Toute reproduction totale ou partielle de ce contenu est strictement interdite et est susceptible
+                        de constituer un d&eacute;lit de contrefa&ccedil;on.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 10 &ndash; Impr&eacute;vision</b></p>
+
+                    <p>Les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente excluent express&eacute;ment le
+                        r&eacute;gime l&eacute;gal de l&rsquo;impr&eacute;vision pr&eacute;vu &agrave; l&rsquo;article
+                        1195 du Code civil pour toutes les op&eacute;rations de Services du Prestataire au Client. Le
+                        Prestataire et le Client renoncent donc chacun &agrave; se pr&eacute;valoir des dispositions de
+                        l&rsquo;article 1195 du Code civil et du r&eacute;gime de l&rsquo;impr&eacute;vision qui y est
+                        pr&eacute;vu, s&rsquo;engageant &agrave; assumer ses obligations m&ecirc;me si
+                        l&rsquo;&eacute;quilibre contractuel se trouve boulevers&eacute; par des circonstances qui
+                        &eacute;taient impr&eacute;visibles lors de la conclusion de la vente, quand bien m&ecirc;me
+                        leur ex&eacute;cution s&rsquo;av&egrave;rerait excessivement on&eacute;reuse et &agrave; en
+                        supporter toutes les cons&eacute;quences &eacute;conomiques et financi&egrave;res.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 11 &ndash; Force majeure</b></p>
+
+                    <p>Les Parties ne pourront &ecirc;tre tenues pour responsables si la non-ex&eacute;cution ou le
+                        retard dans l&rsquo;ex&eacute;cution de l&rsquo;une quelconque de leurs obligations, telles que
+                        d&eacute;crites dans les pr&eacute;sentes d&eacute;coule d&rsquo;un cas de force majeure, au
+                        sens de l&rsquo;article 1218 du Code civil.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>Article 12 : DISPOSITIONS DIVERSES</b></p>
+
+                    <p>Les pr&eacute;sentes Conditions g&eacute;n&eacute;rales de ventes, la Charte des Donn&eacute;es
+                        personnelles, les Conditions de vente du tarif r&eacute;serv&eacute; par le Client, la Demande
+                        de r&eacute;servation, la Confirmation de r&eacute;servation par le Client, constituent
+                        l&rsquo;int&eacute;gralit&eacute; de l&rsquo;accord des parties dans la limite de son objet. Ils
+                        remplacent et annulent, en cons&eacute;quence, dans cette limite, tout accord verbal ou
+                        &eacute;crit qui leur serait ant&eacute;rieur.</p>
+
+                    <p>Aucune tol&eacute;rance, quelle qu&rsquo;en soit la nature, l&rsquo;ampleur, la dur&eacute;e ou
+                        la fr&eacute;quence, ne pourra &ecirc;tre consid&eacute;r&eacute;e comme cr&eacute;atrice
+                        d&rsquo;un quelconque droit et ne pourra conduire &agrave; limiter d&rsquo;une quelconque
+                        mani&egrave;re que ce soit, la possibilit&eacute; d&rsquo;invoquer chacune des clauses des
+                        pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente, &agrave; tout moment, sans aucune
+                        restriction.</p>
+
+                    <p>Toute clause des pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente qui viendrait
+                        &agrave; &ecirc;tre d&eacute;clar&eacute;e nulle ou illicite par un juge comp&eacute;tent serait
+                        priv&eacute;e d&rsquo;effet, mais sa nullit&eacute; ne saurait porter atteinte aux autres
+                        stipulations, ni affecter la validit&eacute; des Conditions G&eacute;n&eacute;rales de Vente
+                        dans leur ensemble ou leurs effets juridiques.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 13 &ndash; Droit applicable &ndash; Langue</b></p>
+
+                    <p>Les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente et les op&eacute;rations qui en
+                        d&eacute;coulent sont r&eacute;gies et soumises au droit fran&ccedil;ais.</p>
+
+                    <p>Les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente sont r&eacute;dig&eacute;es en
+                        langue fran&ccedil;aise. Dans le cas o&ugrave; elles seraient traduites en une ou plusieurs
+                        langues &eacute;trang&egrave;res, seul le texte fran&ccedil;ais ferait foi en cas de litige.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 14 &ndash; Litiges</b></p>
+
+                    <p>Tous les litiges auxquels les op&eacute;rations d&rsquo;achat et de vente conclues en application
+                        des pr&eacute;sentes conditions g&eacute;n&eacute;rales de vente pourraient donner lieu,
+                        concernant tant leur validit&eacute;, leur interpr&eacute;tation, leur ex&eacute;cution, leur
+                        r&eacute;siliation, leurs cons&eacute;quences et leurs suites et qui n&rsquo;auraient pu
+                        &ecirc;tre r&eacute;solues entre l&rsquo;H&ocirc;tel et le Client seront soumis aux tribunaux
+                        comp&eacute;tents dans les conditions de droit commun.</p>
+
+                    <p>Le Client est inform&eacute; qu&rsquo;il peut en tout &eacute;tat de cause recourir &agrave; une
+                        m&eacute;diation conventionnelle, notamment aupr&egrave;s de la Commission de la
+                        m&eacute;diation de la consommation (C. consom. art. L 612-1) ou &agrave; tout mode alternatif
+                        de r&egrave;glement des diff&eacute;rends (conciliation, par exemple) en cas de contestation.
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p><b>ARTICLE 15 &ndash; Information pr&eacute;contractuelle &ndash; Acceptation du Client</b></p>
+
+                    <p>Le Client reconna&icirc;t avoir eu communication, pr&eacute;alablement &agrave; la passation de
+                        sa r&eacute;servation et &agrave; la conclusion du contrat, d&rsquo;une mani&egrave;re lisible
+                        et compr&eacute;hensible, des pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente et de
+                        toutes les informations list&eacute;es &agrave; l&rsquo;article L. 221-5 du Code de la
+                        consommation, et notamment les informations suivantes :</p>
+
+                    <p>● les caract&eacute;ristiques essentielles des Services, compte tenu du support de communication
+                        utilis&eacute; et du Service concern&eacute; ;</p>
+
+                    <p>● le prix des Services et des frais annexes ;</p>
+
+                    <p>● en l&rsquo;absence d&rsquo;ex&eacute;cution imm&eacute;diate du contrat, la date ou le
+                        d&eacute;lai auquel le Prestataire s&rsquo;engage &agrave; fournir les Services
+                        r&eacute;serv&eacute;s ;</p>
+
+                    <p>● les informations relatives &agrave; l&rsquo;identit&eacute; du Prestataire, &agrave; ses
+                        coordonn&eacute;es postales, t&eacute;l&eacute;phoniques et &eacute;lectroniques, et &agrave;
+                        ses activit&eacute;s, si elles ne ressortent pas du contexte,</p>
+
+                    <p>● les informations relatives aux garanties l&eacute;gales et contractuelles et &agrave; leurs
+                        modalit&eacute;s de mise en &oelig;uvre ;</p>
+
+                    <p>● les fonctionnalit&eacute;s du contenu num&eacute;rique et, le cas &eacute;ch&eacute;ant,
+                        &agrave; son interop&eacute;rabilit&eacute; ;</p>
+
+                    <p>● la possibilit&eacute; de recourir &agrave; une m&eacute;diation conventionnelle en cas de
+                        litige ;</p>
+
+                    <p>● les informations relatives aux conditions contractuelles importantes.</p>
+
+                    <p>● les moyens de paiement accept&eacute;s.</p>
+
+                    <p>Le fait pour une personne physique (ou morale), de r&eacute;server sur le site Internet de
+                        l&rsquo;H&ocirc;tel emporte adh&eacute;sion et acceptation pleine et enti&egrave;re des
+                        pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente et obligation au paiement des
+                        Services command&eacute;s, ce qui est express&eacute;ment reconnu par le Client, qui renonce,
+                        notamment, &agrave; se pr&eacute;valoir de tout document contradictoire, qui serait inopposable
+                        au Prestataire.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="footer" class="text-center">
+        <footer>
+            . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
+                générales de ventes</a>
+            . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
+                href="newsletter.html">Newsletter</a> .
+            <br>
+            © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+        </footer>
+    </section>
+
+    <script src="libraries/jquery-3.5.1.min.js"></script>
+    <script src="libraries/popper.min.js"></script>
+    <script src="libraries/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

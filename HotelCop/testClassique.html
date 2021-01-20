@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deluxe</title>
+    <title>Classique</title>
     <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -13,9 +13,7 @@
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
-            </a>
+            <a class="navbar-brand" href="index.html"><img src="img/icones_logo/logo.png"> HotelCorp</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
                 <span class="navbar-toggler-icon"></span>
@@ -28,49 +26,18 @@
                     <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
                     <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
-                    <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png"
                         style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png"
                         style="height: 16px; width: 24px;"></a>
             </div>
             <div class="w-100"></div>
-            <div class="container-fluid justify-content-center" id="MenuReservation">
-                <div class="row">
-                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
-                        <div class="col-lg-7">
-                            <label class="label">Dates : </label>
-                            <input type="text" id="inputDateFrom">
-                            <input type="text" id="inputDateTo">
-                        </div>
-                        <div class="col-lg-2">
-                            <select name="chambers" id="chambers" class="form-control" required>
-                                <option value="" selected>Chambres</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <select name="people" id="people" class="form-control" required>
-                                <option value="" selected>Personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-1">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <form method="post" class="form-inline navbar-nav" action="reservation.html">
+                <input type="text" id="inputDate">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+            </form>
+            <a href="command.html" id="shoppingCart"><i class="fas fa-shopping-cart"></i> Ma commande</a>
         </nav>
     </header>
 
@@ -88,22 +55,22 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active" style="background-image: url('img/chambers/classiqueRoom.png')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
                         </div>
                     </div>
                     <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom1.png')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
                         </div>
                     </div>
                     <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom2.png')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
                         </div>
                     </div>
                     <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom3.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href"#">Afficher les photos</h3>
                         </div>
                     </div>
                 </div>
@@ -124,10 +91,10 @@
                 <a class="nav-link active" aria-current="page" href="chambers.html">Toutes les Gammes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cClassique.html">Classique</a>
+                <a class="nav-link" href="cConfort.html">Confort</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cConfort.html">Confort</a>
+                <a class="nav-link" href="cDeluxe.html">Deluxe</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="cSuite.html">Suite</a>
@@ -136,7 +103,7 @@
     </section>
 
     <section id="Classique" class="container">
-        <h1>Chambre Deluxe</h1>
+        <h1>Chambre Classique</h1>
         <p class="justify-center m-4">
             Situées du premier au sixième étage, les chambres Classiques se déclinent dans une harmonie raffinée de
             40m², promettant à leurs hôtes un confort irréprochable et un avant-goût de leur séjour privilégié dans la
@@ -177,8 +144,7 @@
     </section>
 
 
-
-
+    
 
     <section id="footer" class="text-center">
         <footer>

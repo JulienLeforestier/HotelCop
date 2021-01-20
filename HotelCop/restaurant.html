@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
+                aria-controls="MenuBarToDevelop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuBarToDevelop">
+                <ul class="navbar-nav">
+                    <li><a class="nav-item nav-link" href="index.html">Aperçu</a></li>
+                    <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
+                    <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
+                    <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
+                    <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
+                    <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
+                    <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
+                </ul>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
+                        style="height: 16px; width: 24px;"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
+                        style="height: 16px; width: 24px;"></a>
+            </div>
+            <div class="w-100"></div>
+            <div class="container-fluid justify-content-center" id="MenuReservation">
+                <div class="row">
+                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                        <div class="col-lg-7">
+                            <label class="label">Dates : </label>
+                            <input type="text" id="inputDateFrom">
+                            <input type="text" id="inputDateTo">
+                        </div>
+                        <div class="col-lg-2">
+                            <select name="chambers" id="chambers" class="form-control" required>
+                                <option value="" selected>Chambres</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <select name="people" id="people" class="form-control" required>
+                                <option value="" selected>Personnes</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="margin-top"></div>
+
+    <section id="restaurant_header" class="text-center">
+        <h1>RESTAURANT</h1>
+        <div class="container-fluid justify-content-center restaurant">
+            <div class="row">
+                <p>
+                    Le « RestauCop », notre restaurant décontracté moderne.
+                    Un bistro chic proposant une cuisine française traditionnelle aux accents internationaux à base de
+                    produits locaux frais.
+                    Le RestauCop est une destination prisée des locaux et des touristes.
+                </p>
+            </div>
+        </div>
+        <br>
+        <img src="img/restaurant/brasserie.jpg" alt="salle_de_restaurant">
+    </section>
+
+    <section id="restaurant_presentation" class="text-center">
+        <h2>DANS CET HÔTEL</h2>
+        <div class="container-fluid justify-content-center restaurant">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Services de restauration</h3>
+                    <p>Service d'étage 24h/24</p>
+                    <p>Restaurant de 12h à 21h</p>
+                    <p>Bar et terrasse jusqu'à 21h</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Petit-déjeuner</h3>
+                    <p>Petit-déjeuner buffet, tarif à partir de 22.00 EUR</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Nos trois cartes</h3>
+                    <p>Carte Brasserie (midi)</p>
+                    <p>Carte Dégustation (après-midi)</p>
+                    <p>Carte Restaurant (soir)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurant_cards" class="text-center">
+        <h2>NOS CARTES</h2>
+        <div class="container-fluid justify-content-center restaurant">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Brasserie</h3>
+                    <p>De 12h à 14h</p>
+                    <p>A partir de 60.00 EUR</p>
+                    <a href="img/restaurant/menu_brasserie.pdf" target="_blank">Menu tradition</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Dégustation</h3>
+                    <p>De 14h00 à 18h30</p>
+                    <p>A partir de 90.00 EUR</p>
+                    <a href="img/restaurant/menu_degustation.pdf" target="_blank">Menu Dégustation</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Restaurant</h3>
+                    <p>De 18h30 à 21h</p>
+                    <p>A partir de 75.00 EUR</p>
+                    <a href="img/restaurant/menu_restaurant.pdf" target="_blank">Menu Création</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurant_bar" class="text-center">
+        <h2>LE BAR ET LA TERRASSE</h2>
+        <div class="container-fluid justify-content-center restaurant">
+            <div class="row">
+                <p>
+                    Le Bar et la Terrasse sont les incontournables de l'hôtel.
+                    Une grande sélection de vins, d'alcools, de cocktails et autres boissons pour répondre à toutes les
+                    attentes,
+                    une carte de restauration simple pour les petites faims, les apéritifs ou les emplois du temps
+                    chargés.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurant_footer" class="text-center">
+        <img src="img/restaurant/brasserie2.jpg" alt="gastronomie">
+    </section>
+
+    <section id="footer" class="text-center">
+        <footer>
+            . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
+                générales de ventes</a>
+            . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
+                href="newsletter.html">Newsletter</a> .
+            <br>
+            © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+        </footer>
+    </section>
+
+    <script src="libraries/jquery-3.5.1.min.js"></script>
+    <script src="libraries/popper.min.js"></script>
+    <script src="libraries/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

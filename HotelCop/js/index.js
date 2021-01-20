@@ -1,38 +1,78 @@
-//datepicker
-$('#inputDate').datepicker({
-    altField: "#datepicker",
-    closeText: 'Fermer',
-    prevText: 'Précédent',
-    nextText: 'Suivant',
-    currentText: 'Aujourd\'hui',
-    monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-    monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
-    dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-    dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
-    dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
-    weekHeader: 'Sem.',
-    firstDay: 1,
-    dateFormat: 'dd-mm-yy',
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: ""
-});
+//datepicker from to
+var dateFormat = "mm/dd/yy",
+    from = $("#inputDateFrom")
+        .datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 2,
+            closeText: 'Fermer',
+            prevText: 'Précédent',
+            nextText: 'Suivant',
+            monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+            monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
+            dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+            dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+            dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+            weekHeader: 'Sem.',
+            firstDay: 1
+        })
+        .on("change", function () {
+            to.datepicker("option", "minDate", getDate(this));
+        }),
+    to = $("#inputDateTo").datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 2,
+        closeText: 'Fermer',
+        prevText: 'Précédent',
+        nextText: 'Suivant',
+        monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+        monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
+        dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+        dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+        dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+        weekHeader: 'Sem.',
+        firstDay: 1
+    })
+        .on("change", function () {
+            from.datepicker("option", "maxDate", getDate(this));
+        });
 
-//fonction d'impression
-var printWindow = document.getElementsById('print');
-printWindow.addEventListener('click', print_page);
-function print_page(){
-    alert();
-    window.print();
-  }
-
-/*****  effet toggle page chambers.html */
-function fClassique() {
-    var classique = document.getElementById("idClasImg");
-    if (classique.style.display === "none") {
-        this.style.display = "block";
+function getDate(element) {
+    var date;
+    try {
+        date = $.datepicker.parseDate(dateFormat, element.value);
+    } catch (error) {
+        date = null;
     }
-    else {
-        classique.style.display = "none";
+    return date;
+}
+
+//fonction d'impression onClick sur l'id print = ('Imprimer la page' dans le footer)
+document.getElementById('print').addEventListener('click', function () { window.print(); });
+
+/****   Page chambers.html  gabrielle ******/
+function fDetail() {
+    var detail = document.getElementById('detailClas');
+    if (detail.style.display === "block") {
+        detail.style.display = "none";
+    } else {
+        detail.style.display = "block";
+    }
+}
+function fDetail1() {
+    var detail = document.getElementById('detailClas1');
+    if (detail.style.display === "block") {
+        detail.style.display = "none";
+    } else {
+        detail.style.display = "block";
+    }
+}
+function fDetail2() {
+    var detail = document.getElementById('detailClas2');
+    if (detail.style.display === "block") {
+        detail.style.display = "none";
+    } else {
+        detail.style.display = "block";
     }
 }
