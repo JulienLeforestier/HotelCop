@@ -85,7 +85,38 @@ opinions[4].addEventListener('click', function (){
     else ourOpinion5.style.display = "block";
 })
 
+
+/*******************************************/
 /****   Page chambers.html  gabrielle ******/
+/*******************************************/
+
+//==> chambers.html: jQuery pour zoomer les gammes (classique, confort, deluxe, suite)
+$('.zoomClas').mouseover(function(){
+    $('.animClas').animate({fontSize:'3em'}, 'slow')
+});
+$('.zoomClas').mouseout(function(){
+    $('.animClas').animate({fontSize:'1.5em'}, 'slow')
+});
+$('.zoomConf').mouseover(function(){
+    $('.animConf').animate({fontSize:'3em'}, 'slow')
+});
+$('.zoomConf').mouseout(function(){
+    $('.animConf').animate({fontSize:'1.5em'}, 'slow')
+});
+$('.zoomDelu').mouseover(function(){
+    $('.animDelu').animate({fontSize:'3em'}, 'slow')
+});
+$('.zoomDelu').mouseout(function(){
+    $('.animDelu').animate({fontSize:'1.5em'}, 'slow')
+});
+$('.zoomSuit').mouseover(function(){
+    $('.animSuit').animate({fontSize:'3em'}, 'slow')
+});
+$('.zoomSuit').mouseout(function(){
+    $('.animSuit').animate({fontSize:'1.5em'}, 'slow')
+});
+
+//==> Toutes les pages chambres: JS btn détail show/hide des infos pratiques
 function fDetail() {
     var detail = document.getElementById('detailClas');
     if (detail.style.display === "block") {
@@ -110,3 +141,58 @@ function fDetail2() {
         detail.style.display = "block";
     }
 }
+
+//==> addEventLister pour les liens a href : changer de couleur
+
+var lien1 = document.getElementById('idCCDS');
+lien1.addEventListener('mouseover', fmover);
+lien1.addEventListener('mouseout', fmout);
+
+function fmover(){
+    lien1.style.color = "rgb(150, 200, 255)";
+}
+function fmout(){
+    lien1.style.color = "black";
+}
+var lien2 = document.getElementById('idCCDS1');
+lien2.addEventListener('mouseover', fmover1);
+lien2.addEventListener('mouseout', fmout1);
+
+function fmover1(){
+    lien2.style.color = "rgb(150, 200, 255)";
+}
+function fmout1(){
+    lien2.style.color = "black";
+}
+var lien3 = document.getElementById('idCCDS2');
+lien3.addEventListener('mouseover', fmover2);
+lien3.addEventListener('mouseout', fmout2);
+
+function fmover2(){
+    lien3.style.color = "rgb(150, 200, 255)";
+}
+function fmout2(){
+    lien3.style.color = "black";
+}
+var lien4 = document.getElementById('idCCDS3');
+lien4.addEventListener('mouseover', fmover3);
+lien4.addEventListener('mouseout', fmout3);
+
+function fmover3(){
+    lien4.style.color = "rgb(150, 200, 255)";
+}
+function fmout3(){
+    lien4.style.color = "black";
+}
+
+//==> dans chaque page Gamme animation sur les détails zoom
+$('.zoom2').mouseover(function(){
+    $('.zoom2').animate({fontSize:'1.2em'}, {color:'blue'}, 'slow')
+});
+$('.zoom2').mouseout(function(){
+    $('.zoom2').animate({fontSize:'1em'}, 'slow')
+});
+
+
+
+

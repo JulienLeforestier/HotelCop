@@ -19,7 +19,7 @@ body{
 	margin-top: 130px;
 } 
 
-h1, h2, h3{
+h1, h2, h3, h4{
 	text-align: center;
 	font-family: "Soria";
 }
@@ -32,7 +32,7 @@ section{
 	border-radius: 0;
 	color: black;
 	background-color: rgb(150, 200, 255);
-	border-color:  rgb(150, 200, 255);;
+	border-color:  rgb(150, 200, 255);
 }
 
 .label{
@@ -135,8 +135,9 @@ footer{
 @media all and (max-width : 600px){
 
 }
-
+/*******************/
 /**** chambers ****/
+/******************/
 #chambres{
 	margin-top: 30px;
 	font-size:30px;
@@ -168,6 +169,21 @@ footer{
 }
 #detailClas2{
 	display:none;
+}
+/**==> mettre en gras les pages chambres******/
+.infopra{
+	font-weight:700;
+	text-transform: uppercase;
+	font-family: "Soria";
+	font-size: 1.2em;
+}
+.descrip{
+	font-weight:700;
+	text-transform: capitalize;
+}
+.CCDS{
+	font-family: "Soria";
+	font-size: 1.2em;
 }
 
 /**** spa ****/
