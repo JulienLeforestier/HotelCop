@@ -65,3 +65,19 @@ function fDetail() {
         detail.style.display = "block";
     }
 }
+function fDetail1() {
+    var detail = document.getElementById('detailClas1');
+    if (detail.style.display === "block") {
+        detail.style.display = "none";
+    } else {
+        detail.style.display = "block";
+    }
+}
+function fDetail2() {
+    var detail = document.getElementById('detailClas2');
+    if (detail.style.display === "block") {
+        detail.style.display = "none";
+    } else {
+        detail.style.display = "block";
+    }
+}

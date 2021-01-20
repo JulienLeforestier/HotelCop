@@ -95,10 +95,11 @@ section{
 	margin: 1%;
 }
 
-.card{
+.card
+{
 	margin: 0.6%;
-}
-
+	padding: 0.1%;
+}	
 .notices{
 	width: 580px;
 	margin: 0.6%;
@@ -143,7 +144,7 @@ footer
 	color: black;
 }
 #Classique{
-	padding-top: 200px ;
+padding-top: 50px ;
 }
 
 #Confort{
@@ -165,7 +166,12 @@ footer
 #detailClas{
 	display:none;
 }
-
+#detailClas1{
+	display:none;
+}
+#detailClas2{
+	display:none;
+}
 /**** restaurant ****/
 .restaurant{
 	background-color: rgb(223, 245, 255);
