@@ -2,12 +2,14 @@
 var dateFormat = "mm/dd/yy",
     from = $("#inputDateFrom")
         .datepicker({
+            minDate: 0,
             defaultDate: "+1w",
             changeMonth: true,
             numberOfMonths: 2,
             closeText: 'Fermer',
             prevText: 'Précédent',
             nextText: 'Suivant',
+            dateFormat: "dd/mm/yy",
             monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
             monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
             dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
@@ -26,6 +28,7 @@ var dateFormat = "mm/dd/yy",
         closeText: 'Fermer',
         prevText: 'Précédent',
         nextText: 'Suivant',
+        dateFormat: "dd/mm/yy",
         monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
         monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
         dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
@@ -41,7 +44,9 @@ var dateFormat = "mm/dd/yy",
 function getDate(element) {
     var date;
     try {
-        date = $.datepicker.parseDate(dateFormat, element.value);
+        var parts = element.value.split("/");
+        var dt = parseInt(parts[1]) + "/" + parseInt(parts[0]) + "/" + parseInt(parts[2]);
+        date = $.datepicker.parseDate(dateFormat, dt);
     } catch (error) {
         date = null;
     }

@@ -26,7 +26,7 @@
             </button>
             <div class="collapse navbar-collapse" id="MenuBarToDevelop">
                 <ul class="navbar-nav">
-                    <li><a class="nav-item nav-link" href="index.html">Aperçu</a></li>
+                    <li><a class="nav-item nav-link" href="index.html">Accueil</a></li>
                     <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
                     <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
                     <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
@@ -43,21 +43,19 @@
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
                     <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
-                        <div class="col-lg-7">
+                        <div class="col-md-6">
                             <label class="label">Dates : </label>
                             <input type="text" id="inputDateFrom">
                             <input type="text" id="inputDateTo">
                         </div>
-                        <div class="col-lg-2">
-                            <select name="chambers" id="chambers" class="form-control" required>
+                        <div class="col-md-5">
+                            <select name="chambers" id="chambers" class="form-control">
                                 <option value="" selected>Chambres</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <select name="people" id="people" class="form-control" required>
+                            <select name="people" id="people" class="form-control">
                                 <option value="" selected>Personnes</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -69,16 +67,14 @@
                                 <option value="8">8</option>
                             </select>
                         </div>
-                        <div class="col-lg-1">
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Réservation</button>
+                        <div class="col-md-1">
+                            <button class="btn btn-outline-light" type="submit">Réservation</button>
                         </div>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div id="margin-top"></div>
 
     <section id="photos" class="text-center">
         <div class="container-fluid justify-content-center">
@@ -95,7 +91,7 @@
                             <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</a></h3>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image: url('img/chambers/suiteRoom.jpg')">
+                    <div class="carousel-item" style="background-image: url('img/chambers/deluxe3.jpg')">
                         <div class="carousel-caption d-none d-md-block">
                             <h3 class="display-4"><a href="photos.html" class="caption">Afficher les photos</a></h3>
                         </div>
@@ -140,7 +136,7 @@
                         exceptionnelle.
                     </p>
                     <p class="profile">
-                        <a href="history.html">En savoir plus sur l'histoire de l'HotelCop</a>
+                        <a href="history.html" class="btn btn-primary">En savoir plus sur l'histoire de l'HotelCop</a>
                     </p>
                 </div>
             </div>
@@ -191,7 +187,7 @@
                 </div>
             </div>
             <p class="profile">
-                <a href="notice.html">Laisser votre avis</a>
+                <a href="notice.html" class="btn btn-primary">Laisser votre avis</a>
             </p>
         </div>
     </section>
@@ -201,21 +197,24 @@
             <h2>COUP DE PROJECTEUR SUR...</h2>
             <div class="row">
                 <div class="col-4">
-                    Magnifique spa, piscine intérieure de 18 mètres sur 9, hammam, salle de sport, sauna...
+                    <h4>Presse-papiers</h4>
+                    <p>Magnifique spa, piscine intérieure de 18 mètres sur 9, hammam, salle de sport, sauna...</p>
                 </div>
                 <div class="col-4">
-                    Une superbe façade originale datant du XVe siècle...
+                    <h4>Presse-agrumes</h4>
+                    <p>Une superbe façade originale datant du XVe siècle...</p>
                 </div>
                 <div class="col-4">
-                    Un service d'étage 24h/24 et une vue de rêve, on ne sort de sa chambre que pour visiter ou aller au
-                    spa...
+                    <h4>Presse-purée</h4>
+                    <p>Un service d'étage 24h/24 et une vue de rêve, on ne sort de sa chambre que pour visiter ou aller
+                        au spa...</p>
                 </div>
             </div>
             <p class="profile">
-                <a href="press.html">Voir plus d'articles de presse nous concernants</a>
+                <a href="press.html" class="btn btn-primary">Voir plus d'articles de presse nous concernants</a>
             </p>
             <p class="profile">
-                <a href="actuality.html">ou d'actualités sur notre secteur</a>
+                <a href="actuality.html" class="btn btn-primary">ou d'actualités sur notre secteur</a>
             </p>
         </div>
     </section>
@@ -224,11 +223,11 @@
         <img src="img/spa/bandeau.jpg" alt="spa">
         <hr>
         <div>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn btn-primary">Contact</a>
         </div>
         <hr>
         <div>
-            <a href="recruitment.html">Recrutement</a>
+            <a href="recruitment.html" class="btn btn-primary">Recrutement</a>
         </div>
         <hr>
         <div id="socialLinksWrapper" class="container-fluid justify-content-center">
