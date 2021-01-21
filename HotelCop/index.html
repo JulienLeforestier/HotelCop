@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HotelCop</title>
-    <!-- J'ai mis le font-awesome en CDN car je n'ai pas trouvé comment le télécharger sans payer et on ne l'utilise que sur cette page  -->
+    <!-- Nous avons mis le font-awesome en CDN car nous n'avons pas trouvé comment le télécharger sans payer et nous ne l'utilisons que sur cette page -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
@@ -18,7 +18,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
             <a class="navbar-brand" href="index.html">
-                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
@@ -34,15 +34,18 @@
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
                     <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
-                        style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
-                        style="height: 16px; width: 24px;"></a>
+                <form id="searchForm" method="" class="form-inline navbar-brand" action="mapping.html">
+                    <input type="text" id="searchInput" name="search" placeholder="Recherche">
+                    <button type="submit" id="searchBtn"><img src="img/icones_logo/searchIcon.png"
+                            alt"searchIcon"></button>
+                </form>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"></a>
             </div>
             <div class="w-100"></div>
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
-                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                    <form id="reservation" method="" class="form-inline navbar-nav" action="reservation.html">
                         <div class="col-lg-6">
                             <label class="label" id="labelDate">Dates : </label>
                             <input type="text" id="inputDateFrom">
@@ -130,13 +133,13 @@
                         gastronomique, un bar et des salles de réception élégantes.
                     </p>
                     <p class="profile">
-                        Équipements : parking, restaurant, vidéo, jacuzzi, sauna, spa, piscine, exception, air
+                        Équipements : parking, restaurant, vidéo, jacuzzi, sauna, spa, piscine, air
                         conditionné, wifi (en supplément), bar, room service, coffre fort individuel, sauna / hammam,
-                        mini bar, sèche-cheveux, service blanchisserie, télévision satellite, salle de réunion, spa, vue
+                        mini bar, sèche-cheveux, service blanchisserie, télévision satellite, salle de réunion, vue
                         exceptionnelle.
                     </p>
                     <p class="profile">
-                        <a href="history.html" class="btn btn-primary">En savoir plus sur l'histoire de l'HotelCop</a>
+                        <a href="history.html" class="btn btn-primary">En savoir plus sur l'HotelCop</a>
                     </p>
                 </div>
             </div>
@@ -196,15 +199,15 @@
         <div class="container-fluid justify-content-center">
             <h2>COUP DE PROJECTEUR SUR...</h2>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <h4>Presse-papiers</h4>
                     <p>Magnifique spa, piscine intérieure de 18 mètres sur 9, hammam, salle de sport, sauna...</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h4>Presse-agrumes</h4>
                     <p>Une superbe façade originale datant du XVe siècle...</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <h4>Presse-purée</h4>
                     <p>Un service d'étage 24h/24 et une vue de rêve, on ne sort de sa chambre que pour visiter ou aller
                         au spa...</p>

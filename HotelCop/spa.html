@@ -14,7 +14,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
             <a class="navbar-brand" href="index.html">
-                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
@@ -30,15 +30,18 @@
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
                     <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
-                        style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
-                        style="height: 16px; width: 24px;"></a>
+                <form id="searchForm" method="" class="form-inline navbar-brand" action="mapping.html">
+                    <input type="text" id="searchInput" name="search" placeholder="Recherche">
+                    <button type="submit" id="searchBtn"><img src="img/icones_logo/searchIcon.png"
+                            alt"searchIcon"></button>
+                </form>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"></a>
             </div>
             <div class="w-100"></div>
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
-                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                    <form id="reservation" method="" class="form-inline navbar-nav" action="reservation.html">
                         <div class="col-lg-6">
                             <label class="label" id="labelDate">Dates : </label>
                             <input type="text" id="inputDateFrom">
@@ -116,12 +119,12 @@
         </div>
     </section>
 
-    <section id="restaurant_cards" class="text-center">
+    <section id="spa_care" class="text-center">
         <h2>NOS SOINS</h2>
         <div class="container-fluid justify-content-center">
 
-            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
-            <h3>LE SOIN DETENTE "AU-DELÀ DE L'EAU"</h3>
+            <hr class="hr_separator">
+            <h3>LE SOIN DÉTENTE "AU-DELÀ DE L'EAU"</h3>
             <img src="img/spa/soin1.jpg" alt="soin_spa">
             <p>210€ pour 1h30 de soin</p>
             <p>
@@ -142,8 +145,8 @@
                 </p>
             </div>
 
-            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
-            <h3>LE SOIN DECOUVERTE "LE MIRACLE L’OR DE VIE"</h3>
+            <hr class="hr_separator">
+            <h3>LE SOIN DÉCOUVERTE "LE MIRACLE L’OR DE VIE"</h3>
             <img src="img/spa/soin2.jpg" alt="soin_spa">
             <p>520€ pour 2h de soin</p>
             <p>
@@ -159,7 +162,8 @@
             </p>
             <button class="ourOpinion">Notre avis</button>
             <div id="ourOpinion2" class="container">
-                <p>Après deux heures passées dans ce cocon de raffinement gris perle, aux couleurs emblématiques de la
+                <p>
+                    Après deux heures passées dans ce cocon de raffinement gris perle, aux couleurs emblématiques de la
                     célèbre maison de couture, on se sent régénérée de la tête aux pieds.<br>
                     La peau est comme repulpée, les petites ridules de déshydratation au coin de l’œil ont disparu comme
                     par magie.<br>
@@ -168,7 +172,7 @@
                 </p>
             </div>
 
-            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <hr class="hr_separator">
             <h3>LE SOIN RELAXANT "YUMÉ AU SIX SENSES"</h3>
             <img src="img/spa/soin3.jpg" alt="soin_spa">
             <p>295€ pour 3h de soin</p>
@@ -192,7 +196,7 @@
                 </p>
             </div>
 
-            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <hr class="hr_separator">
             <h3>LE SOIN PLAISIR "CÉRÉMONIE D’ORIENT"</h3>
             <img src="img/spa/soin4.jpg" alt="soin_spa">
             <p>150€ pour 1h15 de soin</p>
@@ -215,7 +219,7 @@
                 </p>
             </div>
 
-            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <hr class="hr_separator">
             <h3>LE SOIN ÉVASION "ROYAL TAOÏSTE"</h3>
             <img src="img/spa/soin5.jpg" alt="soin_spa">
             <p>273€ pour 3h de soin</p>
@@ -238,7 +242,7 @@
                     fatiguée, relâchée, mais l’esprit léger, le teint radieux en prime.
                 </p>
             </div>
-            <hr style="height: 3px; color: dodgerblue; width: 50%; border: 1px dashed dodgerblue;">
+            <hr class="hr_separator">
         </div>
     </section>
 
@@ -258,6 +262,7 @@
     <script src="libraries/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
     <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/spa.js"></script> 
 </body>
 
 </html>
