@@ -14,7 +14,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
             <a class="navbar-brand" href="index.html">
-                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
@@ -30,15 +30,18 @@
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
                     <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
-                        style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
-                        style="height: 16px; width: 24px;"></a>
+                <form id="searchForm" method="" class="form-inline navbar-brand" action="mapping.html">
+                    <input type="text" id="searchInput" name="search" placeholder="Recherche">
+                    <button type="submit" id="searchBtn"><img src="img/icones_logo/searchIcon.png"
+                            alt"searchIcon"></button>
+                </form>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"></a>
             </div>
             <div class="w-100"></div>
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
-                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                    <form id="reservation" method="" class="form-inline navbar-nav" action="reservation.html">
                         <div class="col-lg-6">
                             <label class="label" id="labelDate">Dates : </label>
                             <input type="text" id="inputDateFrom">

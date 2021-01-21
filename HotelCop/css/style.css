@@ -18,64 +18,67 @@ body{
 	font-family: "Cabrion", "Times New Roman", serif;
 	margin-top: 130px;
 } 
-
 h1, h2, h3, h4{
 	text-align: center;
 	font-family: "Soria";
 }
-
 section{
 	margin-bottom: 50px;
 }
-
 .btn-primary{
 	border-radius: 0;
 	color: black;
 	background-color: rgb(150, 200, 255);
 	border-color:  rgb(150, 200, 255);
 }
-
 .label{
 	float: left;
 	margin-right: 4px;
 }
-
 .profile{
     text-align: center;
 	margin: 10px;
 }
-
 #socialLinksWrapper{
 	display: inline-block;
 	text-align: center;
+}
+.hr_separator{
+	height: 3px; 
+	color: dodgerblue; 
+	width: 50%; 
+	border: 1px dashed dodgerblue;
 }
 
 /**** navbar ****/
 #navigation{
     padding: 8px;
-	background-color: rgb(20, 20, 20);
+	background-color: dodgerblue;
 	opacity: 90%;
 }
-
 .navbar{
 	flex-wrap: wrap;
 }
-
 .navbar-nav{
 	margin: auto; 
 }
-
 .nav-link{
 	color: white;
 }
-
 #inputDateFrom, #inputDateTo{
 	max-width: 100px;
+	border-radius: 5px;
 }
-
+#searchInput{
+	max-width: 106px;
+	border-radius: 5px;
+}
 #reservation{
 	margin: auto;
 	color: white;
+}
+#searchBtn{
+	border-radius: 5px;
 }
 
 /**** carousel ****/
@@ -85,7 +88,6 @@ section{
 	background: no-repeat center center scroll;
 	background-size: cover;
 }
-
 .caption{
 	color: white;
 }
@@ -94,7 +96,6 @@ section{
 .card-body{
 	margin: 1%;
 }
-
 .card{
 	margin: 0.6%;
 	padding: 0.1%;
@@ -116,20 +117,9 @@ footer{
 
 /**** media ****/
 @media all and (max-width : 990px){
-	#inputDateFrom, #inputDateTo, #chambersNb, #peopleNb, #labelDate{
+	#inputDateFrom, #inputDateTo, #chambersNb, #peopleNb, #labelDate, .photo_reservation{
 		display: none;
 	}
-	/* #nav-triage, #carouselExampleIndicators
-	{
-		display: none;
-	} 
-	body{
-		margin-top: 150px;
-	}	
-
-	bootstrap = mobile first !! 
-	https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints
-	*/
 }
 
 @media all and (max-width : 600px){
@@ -146,16 +136,16 @@ footer{
 	color: black;
 }
 #Classique{
-	padding-top: 50px ;
+	padding-top: 50px;
 }
 #Confort{
-	padding-top: 200px ;
+	padding-top: 200px;
 }
 #Deluxe{
-	padding-top: 200px ;
+	padding-top: 200px;
 }
 #Suite{
-	padding-top: 200px ;
+	padding-top: 200px;
 	padding-bottom: 100px;
 }
 .details p{
@@ -170,7 +160,8 @@ footer{
 #detailClas2{
 	display:none;
 }
-/**==> mettre en gras les pages chambres******/
+
+/**** mettre en gras les pages chambres ****/
 .infopra{
 	font-weight:700;
 	text-transform: uppercase;
@@ -193,7 +184,7 @@ footer{
 }
 
 /**** background pour des containers spécifiques ****/
-.restaurant, .spa, .mapping{
+.restaurant, .spa, .mapping, .events, .history{
 	background-color: rgb(223, 245, 255);
 	width: 80%;
 	padding: 2%;
@@ -201,9 +192,18 @@ footer{
 
 /**** map ****/
 #map{
-	width: 910px;
+	width: 950px;
 	height: 600px;
 	border: 0;
 	margin: auto;
 	display: block;
+}
+
+/**** reservation ****/
+#reservationContainer{
+	border: solid 2px dodgerblue;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: white;
+	margin: auto;
 }

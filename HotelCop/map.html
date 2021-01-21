@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GoogleMap</title>
+    <title>Accès</title>
     <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -14,7 +14,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
             <a class="navbar-brand" href="index.html">
-                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
                 aria-controls="MenuBarToDevelop">
@@ -30,15 +30,18 @@
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
                     <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
-                        style="height: 16px; width: 24px;"></a>
-                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
-                        style="height: 16px; width: 24px;"></a>
+                <form id="searchForm" method="" class="form-inline navbar-brand" action="mapping.html">
+                    <input type="text" id="searchInput" name="search" placeholder="Recherche">
+                    <button type="submit" id="searchBtn"><img src="img/icones_logo/searchIcon.png"
+                            alt"searchIcon"></button>
+                </form>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"></a>
             </div>
             <div class="w-100"></div>
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
-                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                    <form id="reservation" method="" class="form-inline navbar-nav" action="reservation.html">
                         <div class="col-lg-6">
                             <label class="label" id="labelDate">Dates : </label>
                             <input type="text" id="inputDateFrom">
@@ -76,12 +79,12 @@
         <div class="container-fluid justify-content-center">
             <h2>NOTRE ADRESSE</h2>
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
                     <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                         <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
                         <script>(function () {
-                                var setting = { "height": 531, "width": 803, "zoom": 17, "queryString": "1 Avenue Montaigne, 75008 Paris, France", "place_id": "ChIJTZrTDd1v5kcREvASK7iUgVA", "satellite": false, "centerCoord": [48.86504481818152, 2.3021245000000023], "cid": "0x508194b82b12f012", "lang": "fr", "cityUrl": "/france/paris", "cityAnchorText": "Carte de Paris, Ile de France, France", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "356699" };
+                                var setting = { "height": 450, "width": 950, "zoom": 17, "queryString": "1 Avenue Montaigne, 75008 Paris, France", "place_id": "ChIJTZrTDd1v5kcREvASK7iUgVA", "satellite": false, "centerCoord": [48.86504481818152, 2.3021245000000023], "cid": "0x508194b82b12f012", "lang": "fr", "cityUrl": "/france/paris", "cityAnchorText": "Carte de Paris, Ile de France, France", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "356699" };
                                 var d = document;
                                 var s = d.createElement('script');
                                 s.src = 'https://1map.com/js/script-for-user.js?embed_id=356699';
@@ -94,8 +97,13 @@
                             })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
             </div>
+            <br>
+            1, AVENUE MONTAIGNE, 75008 PARIS, FRANCE
+            <hr>
+            +33 (1) 40 00 00 00 - <a href="contact.html">Contact</a>
+            <hr>
         </div>
     </section>
 
