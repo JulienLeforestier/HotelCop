@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deluxe</title>
+    <title>Chambres</title>
     <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -82,24 +82,24 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active" style="background-image: url('img/chambers/classiqueRoom.png')">
+                    <div class="carousel-item active" style="background-image: url('img/chambers/deluxe2.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="#" class="caption">Gamme Deluxe</a></h3>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom1.png')">
+                    <div class="carousel-item" style="background-image: url('img/chambers/deluxe4.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="#" class="caption">Gamme Deluxe</a></h3>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom2.png')">
+                    <div class="carousel-item" style="background-image: url('img/chambers/deluxe5.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="#" class="caption">Gamme Deluxe</a></h3>
                         </div>
                     </div>
-                    <div class="carousel-item" style="background-image: url('img/chambers/classiqueRoom3.jpg')">
+                    <div class="carousel-item" style="background-image: url('img/chambers/deluxe1_1920x840.jpg')">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="display-4"><a href="#">Afficher les photos</h3>
+                            <h3 class="display-4"><a href="#" class="caption">Gamme Deluxe</a></h3>
                         </div>
                     </div>
                 </div>
@@ -116,63 +116,225 @@
     </section>
     <section>
         <ul class="nav justify-content-center" id="chambres">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="chambers.html">Toutes les Gammes</a>
+            <li class="nav-item CCDS"  >
+                <a id="idCCDS" class="nav-link active" aria-current="page" href="chambers.html">Toutes les gammes</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cClassique.html">Classique</a>
+            <li class="nav-item CCDS">
+                <a id="idCCDS1" class="nav-link" href="cClassique.html">Classique</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cConfort.html">Confort</a>
+            <li class="nav-item CCDS">
+                <a id="idCCDS2" class="nav-link" href="cConfort.html">Confort</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cSuite.html">Suite</a>
+            <li class="nav-item CCDS">
+                <a id="idCCDS3" class="nav-link" href="cSuite.html">Suite</a>
             </li>
         </ul>
     </section>
 
-    <section id="Classique" class="container">
-        <h1>Chambre Deluxe</h1>
+    <section class="container Classique">
+        <h1>Chambre Deluxe Prestige</h1>
         <p class="justify-center m-4">
-            Situées du premier au sixième étage, les chambres Classiques se déclinent dans une harmonie raffinée de
-            40m², promettant à leurs hôtes un confort irréprochable et un avant-goût de leur séjour privilégié dans la
-            Ville Lumière. Elles proposent au regard de très belles vues sur Paris, certaines bénéficiant même d'un
-            balcon.
+            Pour accueillir une famille, ces magnifiques résumés du nouveau chic Français peuvent s’agrandir de plusieurs chambres communicantes, pour vivre Paris en plus grand.
         </p>
-        <h2 class="offset-5 mt-5 mb-5" id="details">Détails</h2>
+        <div class="row">
+            <img class="col-6" src="img/chambers/deluxe3_640-426.jpg" alt="Chambres classiques">
+            <div class="col-6">
+                <img class="mr-4" src="img/chambers/separator2.png" alt="separator">
+                <span class="infopra">Informations pratiques</span>
+                <img class="ml-4" src="img/chambers/separator2.png" alt="separator">
+                <p>Délicatement pensée pour jouer avec les espaces et la lumière, votre chambre Deluxe Prestige vous permettra vous détendre au calme dans l’un de ses canapés moelleux.</p>
+                <div class="row offset-3">
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/surface2.png" alt="surface">
+                        <span>55m²</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/personne1.png" alt="">
+                        <span>2 à 3 invités</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/lit1.png" alt="">
+                        <span> King size</span>
+                    </div>
+                </div>
+                <button type="button" onclick="fDetail()" id="btnDetail" class="offset-4 mt-5">Détails</button>
+            </div>
+            <div id="detailClas" class="container">
+                <div class="row details">
+                    <div class="col-4 zoom">
+                        <hr>
+                        <p class="descrip">Lits</p>
+                        <p class="zoom1">Un lit King size</p>
+                    </div>
+                    <div class="col-4 zoom2">
+                        <hr>
+                        <p class="descrip">Capacité</p>
+                        <p class="zoom3">2 à 3 invités</p>
+                    </div>
+                    <div class="col-4 zoom4">
+                        <hr>
+                        <p class="descrip">Surface</p>
+                        <p class="zoom5">48 – 55m² </p>
+                    </div>
+                    <div class="col-4 zoom6">
+                        <hr>
+                        <p class="descrip">étage</p>
+                        <p class="zoom7">1er au 7e étage</p>
+                    </div>
+                    <div class="col-4 zoom8">
+                        <hr>
+                        <p class="descrip">Salle de bain</p>
+                        <p class="zoom9">Equipée d’une douche séparée aux finitions nobles.
+                        </p>
+                    </div>
+                    <div class="col-4 zoom10">
+                        <hr>
+                        <p class="descrip">Tarif</p>
+                        <p class="zoom11">   ---€</p>
+                    </div>
 
-
-        <div class="row details">
-            <div class="col-4 ">
-                <hr>
-                <p>Lits</p>
+                    <button type="button" class="offset-5 mt-5"><a href="reservation.html">Réservation<a href="reservation.html"></a></button>
+                </div>
             </div>
-            <div class="col-4">
-                <hr>
-                <p>Capacité</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Surface</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Etage</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Salle de bain</p>
-            </div>
-            <div class="col-4">
-                <hr>
-                <p>Tarif</p>
-            </div>
-
-            <button type="button" class="offset-5 mt-5">Réservation</button>
         </div>
     </section>
+    <hr class="hr_separator">
+    <section class="container Classique">
+        <h1>Chambre Deluxe Royale</h1>
+        <p class="justify-center m-4">
+            Après avoir flâné dans les plus belles boutiques parisiennes, cette suite est la suite idéale pour ranger précieusement vos nouveaux trésors dans vos vastes dressings.
+        </p>
+        <div class="row">
+            <img class="col-6" src="img/chambers/deluxe2_640-426.jpg" alt="Chambres classiques">
+            <div class="col-6">
+                <img class="mr-4" src="img/chambers/separator2.png" alt="separator">
+                <span class="infopra">Informations pratiques</span>
+                <img class="ml-4" src="img/chambers/separator2.png" alt="separator">
+                <p>Des chambres et des appartements, toujours intimes et très privés, qu’ils auraient plaisir à retrouver chaque fois qu’ils séjournent à Paris.</p>
+                <div class="row offset-3">
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/surface2.png" alt="">
+                        <span>57m²</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/personne1.png" alt="">
+                        <span>2 à 3 invités</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/lit1.png" alt="">
+                        <span> King size</span>
+                    </div>
+                </div>
+                <button type="button" onclick="fDetail1()" id="btnDetail1" class="offset-4 mt-5">Détails</button>
+            </div>
+            <div id="detailClas1" class="container">
+                <div class="row details">
+                    <div class="col-4 zoom">
+                        <hr>
+                        <p class="descrip">Lits</p>
+                        <p class="zoom1">Un lit king size ou deux lits jumeaux, Lit escamotable, lit d'enfant sur demande</p>
+                    </div>
+                    <div class="col-4 zoom2">
+                        <hr>
+                        <p class="descrip">Capacité</p>
+                        <p class="zoom3">2 à 3 invités</p>
+                    </div>
+                    <div class="col-4 zoom4">
+                        <hr>
+                        <p class="descrip">Surface</p>
+                        <p class="zoom5">53 – 57m² </p>
+                    </div>
+                    <div class="col-4 zoom6">
+                        <hr>
+                        <p class="descrip">étage</p>
+                        <p class="zoom7">5e au 7e étage</p>
+                    </div>
+                    <div class="col-4 zoom8">
+                        <hr>
+                        <p class="descrip">Salle de bain</p>
+                        <p class="zoom9"> La salle de bain est équipée d’une douche séparée et d’une double vasque.</p>
+                    </div>
+                    <div class="col-4 zoom10">
+                        <hr>
+                        <p class="descrip">Tarif</p>
+                        <p class="zoom11">   ---€</p>
+                    </div>
 
+                    <button type="button" class="offset-5 mt-5"><a href="reservation.html">Réservation<a href="reservation.html"></a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="hr_separator">
+    <section class="container Classique">
+        <h1>Chambre Deluxe Présidentielle</h1>
+        <p class="justify-center m-4">
+            Alliant luxe et confort, cette suite où règne l’élégance surplombe fièrement notre paisible Cour Jardin.
 
+        </p>
+        <div class="row">
+            <img class="col-6" src="img/chambers/deluxe4_640-426.jpg" alt="Chambres Confort">
+            <div class="col-6">
+                <img class="mr-4" src="img/chambers/separator2.png" alt="separator">
+                <span class="infopra">Informations pratiques</span>
+                <img class="ml-4" src="img/chambers/separator2.png" alt="separator">
+                <div>
+                    <p>Le luxe peut être trouvé dans tous les détails délicats, y compris vos somptueux linges de lit. Même vos coussins sont brodés par la célèbre Maison Lesage.</p>
+                </div>
+                <div class="row offset-3">
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/surface2.png" alt="">
+                        <span>70m²</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/personne1.png" alt="">
+                        <span>2 à 4 invités</span>
+                    </div>
+                    <div class="col-12 m-4">
+                        <img src="img/chambers/lit1.png" alt="">
+                        <span> King size</span>
+                    </div>
+                </div>
+                <button type="button" onclick="fDetail2()" id="btnDetail2" class="offset-4 mt-5">Détails</button>
+            </div>
+            <div id="detailClas2" class="container">
+                <div class="row details">
+                    <div class="col-4 zoom">
+                        <hr>
+                        <p class="descrip">Lits</p>
+                        <p class="zoom1">Un lit king size ou deux lits jumeaux, Lit escamotable, lit d'enfant sur demande</p>
+                    </div>
+                    <div class="col-4 zoom2">
+                        <hr>
+                        <p class="descrip">Capacité</p>
+                        <p class="zoom3">2 à 4</p>
+                    </div>
+                    <div class="col-4 zoom4">
+                        <hr>
+                        <p class="descrip">Surface</p>
+                        <p class="zoom5">55 – 70m² </p>
+                    </div>
+                    <div class="col-4 zoom6">
+                        <hr>
+                        <p class="descrip">étage</p>
+                        <p class="zoom7">5e au 7e étage</p>
+                    </div>
+                    <div class="col-4 zoom8">
+                        <hr>
+                        <p class="descrip">Salle de bain</p>
+                        <p class="zoom9">Salle de bain en marbre entièrement équipée vasque simple ou double</p>
+                    </div>
+                    <div class="col-4 zoom10">
+                        <hr>
+                        <p class="descrip">Tarif</p>
+                        <p class="zoom11">   ---€</p>
+                    </div>
+
+                    <button type="button" class="offset-5 mt-5"><a href="reservation.html">Réservation</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -192,6 +354,8 @@
     <script src="libraries/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
     <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/chambers.js"></script>
+    <script src="js/cgammes.js"></script>
 </body>
 
 </html>

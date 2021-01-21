@@ -145,7 +145,7 @@ footer{
 #chambres a{
 	color: black;
 }
-#Classique{
+.container.Classique{
 	padding-top: 50px ;
 }
 #Confort{
@@ -184,7 +184,9 @@ footer{
 .CCDS{
 	font-family: "Soria";
 	font-size: 1.2em;
+
 }
+
 
 /**** spa ****/
 #ourOpinion1, #ourOpinion2, #ourOpinion3, #ourOpinion4, #ourOpinion5{
