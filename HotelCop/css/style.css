@@ -178,6 +178,14 @@ footer{
 	font-size: 1.2em;
 }
 
+/**** contact ****/
+.aideForm{
+	margin:40px;
+	padding-top: 30px;
+
+}
+
+
 /**** spa ****/
 #ourOpinion1, #ourOpinion2, #ourOpinion3, #ourOpinion4, #ourOpinion5{
 	margin-top: 10px;
