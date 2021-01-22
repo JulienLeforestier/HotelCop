@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recrutement</title>
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
+                aria-controls="MenuBarToDevelop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="MenuBarToDevelop">
+                <ul class="navbar-nav">
+                    <li><a class="nav-item nav-link" href="index.html">Accueil</a></li>
+                    <li><a class="nav-item nav-link" href="chambers.html">Chambres</a></li>
+                    <li><a class="nav-item nav-link" href="restaurant.html">Restauration</a></li>
+                    <li><a class="nav-item nav-link" href="spa.html">Spa</a></li>
+                    <li><a class="nav-item nav-link" href="map.html">Carte</a></li>
+                    <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
+                    <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
+                </ul>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
+                        style="height: 16px; width: 24px;"></a>
+                <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
+                        style="height: 16px; width: 24px;"></a>
+            </div>
+            <div class="w-100"></div>
+            <div class="container-fluid justify-content-center" id="MenuReservation">
+                <div class="row">
+                    <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+                        <div class="col-lg-6">
+                            <label class="label" id="labelDate">Dates : </label>
+                            <input type="text" id="inputDateFrom">
+                            <input type="text" id="inputDateTo">
+                        </div>
+                        <div class="col-lg-5">
+                            <select name="chambers" id="chambersNb" class="form-control">
+                                <option value="" selected>Chambres</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select name="people" id="peopleNb" class="form-control">
+                                <option value="" selected>Personnes</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-outline-light" type="submit">Réservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <section id="contactForm">
+            <h1 class="aideForm">Recrutement</h1>
+            <h2>Pour Postuler, remplissez le formulaire:</h2>
+            <div class="container-fluid justify-content-center">
+                <div class="row grid-row">
+                    <div class="col-sm-4 d-flex align-items-center justify-content-center">
+                        <img src="img/chambers/recruitement4.jpg" alt="contact" class="photo_reservation">
+                    </div>
+                    <div class="col-sm-4" id="contactContainer">
+                        <form class="row g-3 needs-validation">
+
+                            <div class="col-md-4">
+                              <label for="validationCustom01" class="form-label">Nom</label>
+                              <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Doe" pattern="[A-Z]{2,15}" title="2 à 15 lettres en Majuscule" required>
+                              <div class="valid-feedback">
+                                validé!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">Prénom</label>
+                              <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Jane" pattern="[a-z]{2,15}" title="2 à 15 lettres en Minuscule"  required>
+                              <div class="valid-feedback">
+                                Validé!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom03" class="form-label">Entreprise</label>
+                                <input type="text" class="form-control" id="validationCustom03" value="" placeholder="Google" pattern="[a-zA-Z0-9]{2,15}" title="2 à 15 lettres et/ou Chiffre uniquement">
+                                <div class="valid-feedback">
+                                  Validé!
+                                </div>
+                              </div>
+                            <div class="col-md-4 mr-1 mt-3">
+                                <label for="validationCustom04" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="validationCustom04" value="" placeholder="Jane@info.com" pattern="^[^\W][a-zA-Z0-9]+(.[a-zA-Z0-9]+)@[a-zA-Z0-9]+(.[a-zA-Z0-9]+).[a-zA-Z]{2,4}$" required>
+                                <div class="valid-feedback">
+                                  Validé!
+                                </div>
+                            </div>
+                            <div class="col-md-8 mt-5 ">
+                                <div class="custom-file">
+                                    <label class="col-md-4" for="validatedCustomFile">CV</label>
+                                    <input type="file" class="file-input" id="validatedCustomFile" required name="file" accept=".doc,.docx,.pdf">
+                                </div>
+                            </div>
+                            <div class="col-md-8 mt-5 ">
+                                <div class="custom-file">
+                                    <label class="col-md-6" for="validatedCustomFile">Lettre de motivation</label>
+                                    <input type="file" class="file-input" id="validatedCustomFile" required name="file" accept=".doc,.docx,.pdf">
+                                </div>
+                            </div>
+                            <div class="col-md-8 mt-5">
+                                <label for="validationTextarea" class="form-label">Message</label>
+                                <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                <div class="invalid-feedback">
+                                  Please enter a message in the textarea.
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                              <button class="btn btn-primary" type="submit">Postuler</button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="col-sm-4 align-items-center justify-content-center">
+                        <div class="row">
+                            <h2 class="col-12 m-3">Adresse et Téléphone</h2>
+                            <h1 class="col-12 m-3">HOTELCOP</h1>
+                            <div class="container offset-3 mt-4">
+                            <p class="col-10text-center">1, AVENUE MONTAIGNE, 75008 PARIS, FRANCE</p>
+                            <p class="col-8 text-center">+33 (1) 40 00 00 00 </p>
+                            <p class="col-8 text-center"><a href="http://hotelcop.lotusdigitek.fr/">hotelcop@hotelcopluxe.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="footer" class="text-center">
+        <footer>
+            . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
+                générales de ventes</a>
+            . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
+                href="newsletter.html">Newsletter</a> .
+            <br>
+            © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+        </footer>
+    </section>
+
+    <script src="libraries/jquery-3.5.1.min.js"></script>
+    <script src="libraries/popper.min.js"></script>
+    <script src="libraries/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/recruitment.js"></script>
+</body>
+
+</html>

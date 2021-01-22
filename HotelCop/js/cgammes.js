@@ -69,40 +69,40 @@ function fmout3(){
 
 //==> dans chaque page Gamme animation sur les détails zoom
 $('.zoom').mouseenter(function(){
-    $('.zoom1').animate({fontSize:'1.3em'}, 'slow')
+    $('.zoom1').animate({fontSize:'1.3em'}, 1000)
    /* $('.zoom1').css({backgroundColor:'rgb(223, 245, 255)', color:'darkblue'}, 'slow')*/
 });
 $('.zoom').mouseleave(function(){
-    $('.zoom1').animate({fontSize:'1em'}, 'slow')
+    $('.zoom1').animate({fontSize:'1em'}, 1000)
     /*$('.zoom1').css({backgroundColor:'#f2f2f2', color:'darkblue'}, 'slow')*/
 });
 $('.zoom2').mouseenter(function(){
-    $('.zoom3').animate({fontSize:'1.3em'}, 'slow')
+    $('.zoom3').animate({fontSize:'1.3em'}, 1000)
 });
 $('.zoom2').mouseleave(function(){
-    $('.zoom3').animate({fontSize:'1em'}, 'slow')
+    $('.zoom3').animate({fontSize:'1em'}, 1000)
 });
 $('.zoom4').mouseenter(function(){
-    $('.zoom5').animate({fontSize:'1.3em'}, 'slow')
+    $('.zoom5').animate({fontSize:'1.3em'}, 1000)
 });
 $('.zoom4').mouseleave(function(){
-    $('.zoom5').animate({fontSize:'1em'}, 'slow')
+    $('.zoom5').animate({fontSize:'1em'}, 1000)
 });
 $('.zoom6').mouseenter(function(){
-    $('.zoom7').animate({fontSize:'1.3em'}, 'slow')
+    $('.zoom7').animate({fontSize:'1.3em'}, 1000)
 });
 $('.zoom6').mouseleave(function(){
-    $('.zoom7').animate({fontSize:'1em'}, 'slow')
+    $('.zoom7').animate({fontSize:'1em'}, 1000)
 });
 $('.zoom8').mouseenter(function(){
-    $('.zoom9').animate({fontSize:'1.3em'}, 'slow')
+    $('.zoom9').animate({fontSize:'1.3em'}, 1000)
 });
 $('.zoom8').mouseleave(function(){
-    $('.zoom9').animate({fontSize:'1em'}, 'slow')
+    $('.zoom9').animate({fontSize:'1em'}, 1000)
 });
 $('.zoom10').mouseenter(function(){
-    $('.zoom11').animate({fontSize:'1.3em'}, 'slow')
+    $('.zoom11').animate({fontSize:'1.3em'}, 1000)
 });
 $('.zoom10').mouseleave(function(){
-    $('.zoom11').animate({fontSize:'1em'}, 'slow')
+    $('.zoom11').animate({fontSize:'1em'}, 1000)
 });

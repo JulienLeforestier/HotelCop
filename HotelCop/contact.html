@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -72,47 +72,50 @@
         </nav>
     </header>
 
-    <section>
         <section id="contactForm">
-            <h1 class="m-4">Contact</h1>
+            <h1 class="aideForm">Comment pouvons-nous vous aider?</h1>
             <div class="container-fluid justify-content-center">
                 <div class="row grid-row">
                     <div class="col-sm-4 d-flex align-items-center justify-content-center">
-                        <img src="file:///C:/Users/Gabrielle/Downloads/img/chambers/hamac.jpg" alt="chamber_hamac" class="photo_reservation">
+                        <img src="img/chambers/contact7.jpg" alt="contact" class="photo_reservation">
                     </div>
                     <div class="col-sm-4" id="contactContainer">
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form class="row g-3 needs-validation">
 
                             <div class="col-md-4">
-                              <label for="validationCustom01" class="form-label">Nom</label>
-                              <input type="text" class="form-control" id="validationCustom01" value="Me" required>
+                              <label for="inputNomContact" class="form-label">Nom</label>
+                              <input type="text" class="form-control" id="inputNomContact" value="" placeholder="Doe" pattern="[a-zA-Z]{2,15}" title="2 à 15 lettres en Majuscule" required>
+                              <span class="alertCom">au moins 2 caractères sont requis</span>
                               <div class="valid-feedback">
                                 validé!
                               </div>
                             </div>
                             <div class="col-md-4">
-                              <label for="validationCustom02" class="form-label">Prénom</label>
-                              <input type="text" class="form-control" id="validationCustom02" value="MeAgain" required>
+                              <label for="inputPreContact" class="form-label">Prénom</label>
+                              <input type="text" class="form-control" id="inputPreContact" value="" placeholder="Jane" pattern="[a-zA-Z]{2,15}" title="2 à 15 lettres en Minuscule"  required>
+                              <span class="alertCom">au moins 2 caractères sont requis</span>
                               <div class="valid-feedback">
                                 Validé!
                               </div>
                             </div>
                             <div class="col-md-4">
-                                <label for="validationCustom02" class="form-label">Entreprise</label>
-                                <input type="text" class="form-control" id="validationCustom02" value="MeMeAgain" required>
+                                <label for="inputEntContact" class="form-label">Entreprise</label>
+                                <input type="text" class="form-control" id="inputEntContact" value="" placeholder="Google" pattern="[a-zA-Z0-9]{2,15}" title="2 à 15 lettres et/ou Chiffre uniquement">
+                                <span class="alertCom">au moins 2 caractères sont requis</span>
                                 <div class="valid-feedback">
                                   Validé!
                                 </div>
                               </div>
                             <div class="col-md-4 mr-1 mt-3">
-                                <label for="validationCustom02" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="validationCustom02" value="MeMegain@aha.com" required>
+                                <label for="inputEmaContact" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmaContact" value="" placeholder="Jane@info.com" pattern="^[^\W][a-zA-Z0-9]+(.[a-zA-Z0-9]+)@[a-zA-Z0-9]+(.[a-zA-Z0-9]+).[a-zA-Z]{2,4}$" required>
+                                <span class="alertCom">respecter le format email</span>
                                 <div class="valid-feedback">
                                   Validé!
                                 </div>
                             </div>
                             <div class="col-md-4 mt-5">
-                              <select class="form-select" id="validationCustom04" required>
+                              <select class="form-select" id="selectPaysContact" required>
                                 <option selected disabled value="">Pays</option>
                                 <option value="1">France</option>
                                 <option value="2">Angleterre</option>
@@ -120,30 +123,34 @@
                                 <option value="4">Italie</option>
                                 <option value="5">Espagne</option>
                               </select>
+                              <span class="alertCom">Selectionner le pays</span>
                               <div class="invalid-feedback">
                                 Please select a valid state.
                               </div>
                             </div>
                             <div class="col-md-4 mt-3">
-                              <label for="validationCustom05" class="form-label">Sujet</label>
-                              <input type="text" class="form-control" id="validationCustom05" required>
+                              <label for="inputSujContact" class="form-label">Sujet</label>
+                              <input type="text" class="form-control" id="inputSujContact" pattern="[a-zA-Z0-9]{2,20}" title="2 à 20 lettres et/ou Chiffre uniquement" required>
+                              <span class="alertCom">Saisir le sujet de votre demande</span>
                               <div class="invalid-feedback">
                                 sujet required.
                               </div>
                             </div>
                             <div class="col-md-4 mt-5">
-                                <select class="form-select" required aria-label="select example">
+                                <select class="form-select" id="selectCateContact" required aria-label="select example">
                                   <option selected disabled value="">Catégorie</option>
                                   <option value="1">Chambre</option>
                                   <option value="2">Restaurant</option>
                                   <option value="3">Spa</option>
                                   <option value="3">Ordre général</option>
                                 </select>
+                                <span class="alertCom">Saisir la catégorie concernée</span>
                                 <div class="invalid-feedback">Example invalid select feedback</div>
                             </div>
                             <div class="col-md-4 mt-3">
-                                <label for="validationTextarea" class="form-label">Message</label>
-                                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                <label for="textareaContact" class="form-label">Message</label>
+                                <textarea class="form-control" id="textareaContact" placeholder="Required example textarea" required></textarea>
+                                <span class="alertCom">Saisir votre message</span>
                                 <div class="invalid-feedback">
                                   Please enter a message in the textarea.
                                 </div>
@@ -154,14 +161,20 @@
                             </div>
                           </form>
                     </div>
-                    <div class="col-sm-4 d-flex align-items-center justify-content-center">
-                        <img src="file:///C:/Users/Gabrielle/Downloads/img/spa/piscine_exterieure.jpg" alt="piscine_exterieure" class="photo_reservation">
+                    <div class="col-sm-4 align-items-center justify-content-center">
+                        <div class="row">
+                            <h2 class="col-12 m-3">Adresse et Téléphone</h2>
+                            <h1 class="col-12 m-3">HOTELCOP</h1>
+                            <div class="container offset-3 mt-4">
+                            <p class="col-10text-center">1, AVENUE MONTAIGNE, 75008 PARIS, FRANCE</p>
+                            <p class="col-8 text-center">+33 (1) 40 00 00 00 </p>
+                                                        <p class="col-8 text-center"><a href="http://hotelcop.lotusdigitek.fr/">hotelcop@hotelcopluxe.com</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-    </section>
 
     <section id="footer" class="text-center">
         <footer>
@@ -179,6 +192,7 @@
     <script src="libraries/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
     <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
