@@ -208,3 +208,28 @@ footer{
 	background-color: white;
 	margin: auto;
 }
+
+/**** notice ****/
+.rating {
+	direction: rtl;
+ }
+ .rating a {
+	color: #aaa;
+	text-decoration: none;
+	font-size: 3em;
+	transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+	color: orange;
+	cursor: pointer;
+ }
+ #noticeArea{
+	 height: 100px;
+	 width: 600px;
+ }
+ #noticeName{
+	width: 600px;
+ }
