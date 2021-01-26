@@ -84,61 +84,69 @@
                     <form class="row g-3 needs-validation">
 
                         <div class="col-md-4">
-                            <label for="validationCustom01" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="validationCustom01" value="" placeholder="Doe"
-                                pattern="[A-Z]{2,15}" title="2 à 15 lettres en Majuscule" required>
+                            <label for="inputNomRecrut" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="inputNomRecrut" value="" placeholder="Doe"
+                                pattern="[a-zA-Z]{2,10}" title="2 à 10 lettres uniquement" required>
+                                <span class="alertCom">entre 2 et 10 lettres sont requises et aucun chiffre</span>
                             <div class="valid-feedback">
                                 validé!
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label for="validationCustom02" class="form-label">Prénom</label>
-                            <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Jane"
-                                pattern="[a-z]{2,15}" title="2 à 15 lettres en Minuscule" required>
+                            <label for="inputPreRecrut" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="inputPreRecrut" value="" placeholder="Jane"
+                                pattern="[a-z]{2,10}" title="2 à 10 lettres uniquement" required>
+                                <span class="alertCom">entre 2 et 10 lettres sont requises et aucun chiffre</span>
                             <div class="valid-feedback">
                                 Validé!
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label for="validationCustom03" class="form-label">Entreprise</label>
-                            <input type="text" class="form-control" id="validationCustom03" value=""
-                                placeholder="Google" pattern="[a-zA-Z0-9]{2,15}"
-                                title="2 à 15 lettres et/ou Chiffre uniquement">
+                            <label for="inputEntRecrut" class="form-label">Entreprise</label>
+                            <input type="text" class="form-control" id="inputEntRecrut" value=""
+                                placeholder="Google" pattern="[a-zA-Z0-9]{2,10}"
+                                title="2 à 10 lettres et/ou Chiffre uniquement">
+                                <span class="alertCom">entre 2 à 10 caractères sont requis</span>
                             <div class="valid-feedback">
                                 Validé!
                             </div>
                         </div>
                         <div class="col-md-4 mr-1 mt-3">
-                            <label for="validationCustom04" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="validationCustom04" value=""
+                            <label for="inputEmaRecrut" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmaRecrut" value=""
                                 placeholder="Jane@info.com"
                                 pattern="^[^\W][a-zA-Z0-9]+(.[a-zA-Z0-9]+)@[a-zA-Z0-9]+(.[a-zA-Z0-9]+).[a-zA-Z]{2,4}$"
                                 required>
+                                <span class="alertCom">respecter le format email</span>
                             <div class="valid-feedback">
                                 Validé!
                             </div>
                         </div>
                         <div class="col-md-8 mt-5 ">
                             <div class="custom-file">
-                                <label class="col-md-4" for="validatedCustomFile">CV</label>
-                                <input type="file" class="file-input" id="validatedCustomFile" required name="file"
+                                <label class="col-md-4" for="inputCvRecrut">CV</label>
+                                <input type="file" class="file-input" id="inputCvRecrut" required name="file"
                                     accept=".doc,.docx,.pdf">
+                                <span class="alertCom">format accepté doc, docx, pdf</span>
                             </div>
                         </div>
                         <div class="col-md-8 mt-5 ">
                             <div class="custom-file">
-                                <label class="col-md-6" for="validatedCustomFile">Lettre de motivation</label>
-                                <input type="file" class="file-input" id="validatedCustomFile" required name="file"
+                                <label class="col-md-6" for="inputLmRecrut">Lettre de motivation</label>
+                                <input type="file" class="file-input" id="inputLmRecrut" required name="file"
                                     accept=".doc,.docx,.pdf">
+                                <span class="alertCom">format accepté doc, docx, pdf</span>
                             </div>
                         </div>
                         <div class="col-md-8 mt-5">
-                            <label for="validationTextarea" class="form-label">Message</label>
-                            <textarea class="form-control" id="validationTextarea"
-                                placeholder="Required example textarea" required></textarea>
+                            <label for="inputTxtRecrut" class="form-label">Message</label>
+                            <textarea class="form-control" id="inputTxtRecrut"
+                                placeholder="Laissez nous votre message" required></textarea>
+                                <span class="alertCom">entre 2 à 20 caractères sont requis</span>
                             <div class="invalid-feedback">
                                 Please enter a message in the textarea.
                             </div>
+                            <span id="charcount"></span>
                         </div>
 
                         <div class="col-12 mt-5">
@@ -154,7 +162,7 @@
                             <p class="col-10text-center">1, AVENUE MONTAIGNE, 75008 PARIS, FRANCE</p>
                             <p class="col-8 text-center">+33 (1) 40 00 00 00 </p>
                             <p class="col-8 text-center"><a
-                                    href="http://hotelcop.lotusdigitek.fr/">hotelcop@hotelcopluxe.com</a></p>
+                                    href="#">hotelcop@hotelcopluxe.com</a></p>
                         </div>
                     </div>
                 </div>
