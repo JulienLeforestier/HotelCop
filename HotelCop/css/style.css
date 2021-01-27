@@ -28,9 +28,10 @@ section{
 }
 .btn-primary{
 	border-radius: 0;
-	color: black;
-	background-color: rgb(150, 200, 255);
-	border-color:  rgb(150, 200, 255);
+	color:white;
+	background-color:rgb(1, 37, 73);
+	opacity: 80%;
+	border-color:   rgb(1, 37, 73);
 }
 .label{
 	float: left;
@@ -48,13 +49,13 @@ section{
 	height: 3px; 
 	color: dodgerblue; 
 	width: 50%; 
-	border: 1px dashed dodgerblue;
+	border: 1px dashed black;
 }
 
 /**** navbar ****/
 #navigation{
     padding: 8px;
-	background-color: dodgerblue;
+	background-color: rgb(1, 37, 73);
 	opacity: 90%;
 }
 .navbar{
@@ -84,12 +85,12 @@ section{
 }
 #searchBtn{
 	border-radius: 5px;
-}
+} 
 
 /**** carousel ****/
 .carousel-item{
-	height: 80vh;
-	min-height: 85vh;
+	height: 85vh;
+	min-height: 350px;
 	background: no-repeat center center scroll;
 	background-size: cover;
 }
@@ -156,6 +157,12 @@ footer{
 	padding-top: 200px;
 	padding-bottom: 100px;
 }
+
+#btnDetail, #btnDetail1, #btnDetail2{
+	background-color:rgb(1, 37, 73);
+	color: white;
+}
+
 .details p{
 	text-align: center;
 }
