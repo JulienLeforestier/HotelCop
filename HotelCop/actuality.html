@@ -30,10 +30,10 @@
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
                     <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <form id="searchForm" method="" class="form-inline navbar-brand" action="mapping.html">
+                <form id="searchForm" method="get" class="form-inline navbar-brand" action="mapping.html">
                     <input type="text" id="searchInput" name="search" placeholder="Recherche">
                     <button type="submit" id="searchBtn"><img src="img/icones_logo/searchIcon.png"
-                            alt"searchIcon"></button>
+                            alt="searchIcon"></button>
                 </form>
                 <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"></a>
                 <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"></a>
@@ -41,11 +41,12 @@
             <div class="w-100"></div>
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
-                    <form id="reservation" method="" class="form-inline navbar-nav" action="reservation.html">
+                    <form id="reservation" method="get" class="form-inline navbar-nav" action="reservation.html">
                         <div class="col-lg-6">
-                            <label class="label" id="labelDate">Dates : </label>
-                            <input type="text" id="inputDateFrom">
-                            <input type="text" id="inputDateTo">
+                            <span id="labelDate">Dates : </span>
+                            <input type="text" id="inputDateFrom" placeholder="jj/mm/aa">
+                            <span id="fromTo"> au </span>
+                            <input type="text" id="inputDateTo" placeholder="jj/mm/aa">
                         </div>
                         <div class="col-lg-5">
                             <select name="chambers" id="chambersNb" class="form-control">
@@ -104,7 +105,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/darroze_poullennec.jpg" alt"Darroze_Poullennec">
+                                    <img src="img/actu/darroze_poullennec.jpg" alt="Darroze_Poullennec">
                                     <p>Hélène Darroze et Gwendal POULLENNEC ©Michelin</p>
                                 </div>
                             </div>
@@ -114,7 +115,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/actu/carbo.jpg" alt"carbonara">
+                                    <img src="img/actu/carbo.jpg" alt="carbonara">
                                 </div>
                                 <div class="col-lg-6">
                                     <h4 class="card-title">Carbonara de panais au lard de porc Noir de Bigorre,
@@ -156,7 +157,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/topchef.png" alt"top_chef">
+                                    <img src="img/actu/topchef.png" alt="top_chef">
                                 </div>
                             </div>
                         </div>
@@ -165,7 +166,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/actu/chiavola.jpg" alt"chiavola">
+                                    <img src="img/actu/chiavola.jpg" alt="chiavola">
                                 </div>
                                 <div class="col-lg-6">
                                     <h4 class="card-title">Christophe Chiavola récompensé d’une étoile Michelin 2021 au
@@ -201,7 +202,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/sanjou.jpg" alt"sanjou">
+                                    <img src="img/actu/sanjou.jpg" alt="sanjou">
                                 </div>
                             </div>
                         </div>
@@ -210,7 +211,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/actu/le_squer.jpg" alt"le_squer">
+                                    <img src="img/actu/le_squer.jpg" alt="le_squer">
                                 </div>
                                 <div class="col-lg-6">
                                     <h4 class="card-title">Un Bib Gourmand Michelin pour « Paris-Brest by Christian Le
@@ -249,7 +250,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/mazzia.jpg" alt"mazzia">
+                                    <img src="img/actu/mazzia.jpg" alt="mazzia">
                                 </div>
                             </div>
                         </div>
@@ -258,7 +259,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/actu/shabour.png" alt"shabour">
+                                    <img src="img/actu/shabour.png" alt="shabour">
                                 </div>
                                 <div class="col-lg-6">
                                     <h4 class="card-title">Shabour; une cuisine franco-israélienne étoilée Michelin 2021
@@ -291,7 +292,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/alsace.png" alt"alsace_chiefs">
+                                    <img src="img/actu/alsace.png" alt="alsace_chiefs">
                                 </div>
                             </div>
                         </div>
@@ -300,7 +301,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/actu/huitres.jpg" alt"huitres">
+                                    <img src="img/actu/huitres.jpg" alt="huitres">
                                 </div>
                                 <div class="col-lg-6">
                                     <h4 class="card-title">Comment conserver les huitres ?</h4>
@@ -355,7 +356,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/schmitt.png" alt"schmitt">
+                                    <img src="img/actu/schmitt.png" alt="schmitt">
                                 </div>
                             </div>
                         </div>
@@ -364,7 +365,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/actu/la_liste.jpg" alt"la_liste">
+                                    <img src="img/actu/la_liste.jpg" alt="la_liste">
                                 </div>
                                 <div class="col-lg-6">
                                     <h4 class="card-title">LA LISTE dévoile 10 prix au lieu de son classement des 1 000
@@ -410,7 +411,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/covid.jpg" alt"covid">
+                                    <img src="img/actu/covid.jpg" alt="covid">
                                 </div>
                             </div>
                         </div>
@@ -419,7 +420,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/actu/bigorre.png" alt"bigorre">
+                                    <img src="img/actu/bigorre.png" alt="bigorre">
                                 </div>
                                 <div class="col-lg-6">
                                     <h4 class="card-title">Gault et Millau et Sysco : du champ à l’assiette avec le
@@ -462,7 +463,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="img/actu/caravane.jpg" alt"caravane">
+                                    <img src="img/actu/caravane.jpg" alt="caravane">
                                 </div>
                             </div>
                         </div>
@@ -474,13 +475,15 @@
     </section>
 
     <section id="footer" class="text-center">
+        <h2>Footer</h2> 
+        <!-- H2 effacé par le CSS, il est juste là pour annuler le warning W3C -->
         <footer>
             . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
                 générales de ventes</a>
             . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
                 href="newsletter.html">Newsletter</a> .
             <br>
-            © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+            © 2020-2021, HotelCop.com, Inc. ou ses filiales.
         </footer>
     </section>
 

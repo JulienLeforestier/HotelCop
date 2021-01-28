@@ -11,12 +11,12 @@
 	font-family: "Aliandra";
 	src: url("../polices/Aliandra.ttf");
 }
-
 /**** all ****/
 body{
 	margin: 0;
 	font-family: "Cabrion", "Times New Roman", serif;
 	margin-top: 130px;
+	background-color: #f8f3ed;
 } 
 h1, h2, h3, h4{
 	text-align: center;
@@ -25,15 +25,22 @@ h1, h2, h3, h4{
 section{
 	margin-bottom: 50px;
 }
+input{
+    text-align: center;
+}
+ul {
+	list-style-type : none;
+}
+iframe{
+	border: 0;
+	width: 560px; 
+	height: 315px;
+}
 .btn-primary{
 	border-radius: 0;
-	color: black;
-	background-color: rgb(150, 200, 255);
-	border-color:  rgb(150, 200, 255);
-}
-.label{
-	float: left;
-	margin-right: 4px;
+	color: white;
+	background-color: rgb(1, 37, 73);
+	border-color:  rgb(1, 37, 73);
 }
 .profile{
     text-align: center;
@@ -45,15 +52,15 @@ section{
 }
 .hr_separator{
 	height: 3px; 
-	color: dodgerblue; 
+	color: rgb(1, 37, 73);; 
 	width: 50%; 
-	border: 1px dashed dodgerblue;
+	border: 1px dashed rgb(1, 37, 73);;
 }
 
 /**** navbar ****/
 #navigation{
     padding: 8px;
-	background-color: dodgerblue;
+	background-color: rgb(1, 37, 73);;
 	opacity: 90%;
 }
 .navbar{
@@ -68,9 +75,10 @@ section{
 #inputDateFrom, #inputDateTo{
 	max-width: 100px;
 	border-radius: 5px;
+	height: 40px;
 }
 #searchInput{
-	max-width: 106px;
+	max-width: 150px;
 	border-radius: 5px;
 }
 #reservation{
@@ -83,7 +91,7 @@ section{
 
 /**** carousel ****/
 .carousel-item{
-	height: 80vh;
+	height: 85vh;
 	min-height: 350px;
 	background: no-repeat center center scroll;
 	background-size: cover;
@@ -114,18 +122,29 @@ footer{
 	text-align: center;
 	font-size: 0.8em; 
 }
+#footer h2{
+	display: none;
+}
 
 /**** media ****/
-@media all and (max-width : 960px){
-	#inputDateFrom, #inputDateTo, #chambersNb, #peopleNb, #labelDate, 
+@media all and (max-width : 991px){
+	#inputDateFrom, #inputDateTo, #fromTo, #chambersNb, #peopleNb, #labelDate, 
 	.photo_reservation,
 	#large_img_spa, #large_img_events{
 		display: none;
+	}
+	#searchInput{
+		max-width: 106px;
 	}
 }
 
 @media all and (max-width : 600px){
 
+}
+
+/**** index ****/
+#otherLinks h2{
+	display: none;
 }
 
 /**** chambers ****/
@@ -182,9 +201,7 @@ footer{
 .aideForm{
 	margin:40px;
 	padding-top: 30px;
-
 }
-
 
 /**** spa ****/
 #ourOpinion1, #ourOpinion2, #ourOpinion3, #ourOpinion4, #ourOpinion5{
@@ -210,11 +227,14 @@ footer{
 
 /**** reservation ****/
 #reservationContainer{
-	border: solid 2px dodgerblue;
+	border: solid 2px rgb(1, 37, 73);;
 	border-radius: 15px;
 	padding: 15px;
 	background-color: white;
 	margin: auto;
+}
+#inputDateFromReservation, #inputDateToReservation{
+	max-width: 100px;
 }
 
 /**** notice ****/
