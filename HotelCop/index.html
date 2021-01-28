@@ -34,10 +34,10 @@
                     <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
                     <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
                 </ul>
-                <form id="searchForm" method="" class="form-inline navbar-brand" action="mapping.html">
+                <form id="searchForm" method="get" class="form-inline navbar-brand" action="mapping.html">
                     <input type="text" id="searchInput" name="search" placeholder="Recherche">
                     <button type="submit" id="searchBtn"><img src="img/icones_logo/searchIcon.png"
-                            alt"searchIcon"></button>
+                            alt="searchIcon"></button>
                 </form>
                 <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"></a>
                 <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"></a>
@@ -45,11 +45,12 @@
             <div class="w-100"></div>
             <div class="container-fluid justify-content-center" id="MenuReservation">
                 <div class="row">
-                    <form id="reservation" method="" class="form-inline navbar-nav" action="reservation.html">
+                    <form id="reservation" method="get" class="form-inline navbar-nav" action="reservation.html">
                         <div class="col-lg-6">
-                            <label class="label" id="labelDate">Dates : </label>
-                            <input type="text" id="inputDateFrom">
-                            <input type="text" id="inputDateTo">
+                            <span id="labelDate">Dates : </span>
+                            <input type="text" id="inputDateFrom" placeholder="jj/mm/aa">
+                            <span id="fromTo"> au </span>
+                            <input type="text" id="inputDateTo" placeholder="jj/mm/aa">
                         </div>
                         <div class="col-lg-5">
                             <select name="chambers" id="chambersNb" class="form-control">
@@ -183,7 +184,7 @@
     <section id="chambers" class="text-center">
         <div class="container-fluid justify-content-center">
             <h2>CHAMBRES ET SUITES</h2>
-            <div id="myTable" class="row col-lg-12 justify-content-center">
+            <div id="myChambers" class="row col-lg-12 justify-content-center">
                 <div class="col-md-4">
                     <h4>Confort</h4>
                     <img src="img/chambers/confort3_380-253.jpg" alt="confort_chamber">
@@ -209,10 +210,10 @@
         <div class="container-fluid justify-content-center">
             <h2>COUP DE PROJECTEUR SUR...</h2>
             <div class="container-fluid justify-content-center">
-                <div id="myTable" class="row col-lg-12 justify-content-center">
+                <div id="myTeasers" class="row col-lg-12 justify-content-center">
                     <div class="card">
                         <div class="card-body ">
-                            <h4 class="card-title">Presse-papiers</h4>
+                            <h4 class="card-title">Le Monde</h4>
                             <p class="card-text">
                                 Magnifique spa, piscine intérieure de 18 mètres sur 9, hammam, salle de sport, sauna...
                             </p>
@@ -220,7 +221,7 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Presse-agrumes</h4>
+                            <h4 class="card-title">Le Parisien</h4>
                             <p class="card-text">
                                 Une superbe façade originale datant du XVe siècle...
                             </p>
@@ -228,7 +229,7 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Presse-purée</h4>
+                            <h4 class="card-title">Libération</h4>
                             <p class="card-text">
                                 Un service d'étage 24h/24 et une vue de rêve, on ne sort de sa chambre que pour visiter
                                 ou aller au spa...
@@ -248,6 +249,8 @@
 
     <section id="otherLinks" class="text-center">
         <img src="img/spa/bandeau.jpg" alt="spa">
+        <h2>Autres liens</h2> 
+        <!-- H2 effacé par le CSS, il est juste là pour annuler le warning W3C -->
         <hr>
         <div>
             <a href="contact.html" class="btn btn-primary">Contact</a>
@@ -265,13 +268,15 @@
     </section>
 
     <section id="footer" class="text-center">
+        <h2>Footer</h2> 
+        <!-- H2 effacé par le CSS, il est juste là pour annuler le warning W3C -->
         <footer>
             . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
                 générales de ventes</a>
             . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
                 href="newsletter.html">Newsletter</a> .
             <br>
-            © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+            © 2020-2021, HotelCop.com, Inc. ou ses filiales.
         </footer>
     </section>
 

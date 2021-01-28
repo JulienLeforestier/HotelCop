@@ -14,7 +14,7 @@
   <header id="header">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
       <a class="navbar-brand" href="index.html">
-        <img src="img/icones_logo/logo.png" alt="logoHotelCop"> HotelCop
+        <img src="img/icones_logo/logo.png" alt="logoHotelCop">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuBarToDevelop"
         aria-controls="MenuBarToDevelop">
@@ -30,19 +30,22 @@
           <li><a class="nav-item nav-link" href="events.html">Evénements</a></li>
           <li><a class="nav-item nav-link" href="command.html">Commande</a></li>
         </ul>
-        <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"
-            style="height: 16px; width: 24px;"></a>
-        <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"
-            style="height: 16px; width: 24px;"></a>
+        <form id="searchForm" method="get" class="form-inline navbar-brand" action="mapping.html">
+          <input type="text" id="searchInput" name="search" placeholder="Recherche">
+          <button type="submit" id="searchBtn"><img src="img/icones_logo/searchIcon.png" alt="searchIcon"></button>
+        </form>
+        <a class="navbar-brand" href=""><img src="img/icones_logo/flagFrench.png" alt="frenchFlag"></a>
+        <a class="navbar-brand" href=""><img src="img/icones_logo/flagEngland.png" alt="englishFlag"></a>
       </div>
       <div class="w-100"></div>
       <div class="container-fluid justify-content-center" id="MenuReservation">
         <div class="row">
-          <form id="reservation" method="post" class="form-inline navbar-nav" action="reservation.html">
+          <form id="reservation" method="get" class="form-inline navbar-nav" action="reservation.html">
             <div class="col-lg-6">
-              <label class="label" id="labelDate">Dates : </label>
-              <input type="text" id="inputDateFrom">
-              <input type="text" id="inputDateTo">
+              <span id="labelDate">Dates : </span>
+              <input type="text" id="inputDateFrom" placeholder="jj/mm/aa">
+              <span id="fromTo"> au </span>
+              <input type="text" id="inputDateTo" placeholder="jj/mm/aa">
             </div>
             <div class="col-lg-5">
               <select name="chambers" id="chambersNb" class="form-control">
@@ -80,7 +83,7 @@
           <img src="img/chambers/contact7.jpg" alt="contact" class="photo_reservation">
         </div>
         <div class="col-sm-4" id="contactContainer">
-          <form class="row g-3 needs-validation">
+          <form class="row g-3 needs-validation" method="get">
 
             <div class="col-md-4">
               <label for="inputNomContact" class="form-label">Nom</label>
@@ -183,15 +186,17 @@
   </section>
 
   <section id="footer" class="text-center">
+    <h2>Footer</h2> 
+    <!-- H2 effacé par le CSS, il est juste là pour annuler le warning W3C -->
     <footer>
-      . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
-        générales de ventes</a>
-      . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
-        href="newsletter.html">Newsletter</a> .
-      <br>
-      © 2020-2021, HotelCorp.com, Inc. ou ses filiales.
+        . <a href="legalDisclaimer.html">Mentions légales</a> . <a href="generalConditionsOfSale.html">Conditions
+            générales de ventes</a>
+        . <a href="mapping.html">Plan du site</a> . <a href="" id="print">Imprimer la page</a> . <a
+            href="newsletter.html">Newsletter</a> .
+        <br>
+        © 2020-2021, HotelCop.com, Inc. ou ses filiales.
     </footer>
-  </section>
+</section>
 
   <script src="libraries/jquery-3.5.1.min.js"></script>
   <script src="libraries/popper.min.js"></script>
