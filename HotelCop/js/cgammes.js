@@ -24,8 +24,12 @@ function fDetail2() {
     }
 }
 
-//==> addEventLister pour les liens a href : changer de couleur
+//==> Toutes les pages chambres: JS btn reserv redirection vers la page reservation
+document.getElementById('btnReserv1').addEventListener('click', function(){document.location.href="reservation.html";});
+document.getElementById('btnReserv2').addEventListener('click', function(){document.location.href="reservation.html";});
+document.getElementById('btnReserv3').addEventListener('click', function(){document.location.href="reservation.html";});
 
+//==> addEventLister pour les liens a href : changer de couleur
 var lien1 = document.getElementById('idCCDS');
 lien1.addEventListener('mouseover', fmover);
 lien1.addEventListener('mouseout', fmout);

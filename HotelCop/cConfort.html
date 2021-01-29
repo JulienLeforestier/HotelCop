@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chambres</title>
+    <title>Chambres Conforts</title>
     <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="libraries/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -108,23 +108,23 @@
         </div>
     </section>
     <section>
-        <ul class="container" id="chambres">
+        <div class="container" id="chambres">
             <div class="row">
-                <li class="nav-item1 CCDS">
+                <span class="nav-item1 CCDS">
                     <a id="idCCDS" class="nav-link1 active" aria-current="page" href="chambers.html">Toutes les
                         gammes</a>
-                </li>
-                <li class="nav1-item CCDS">
+                </span>
+                <span class="nav1-item CCDS">
                     <a id="idCCDS1" class="nav-link1" href="cClassique.html">Classique</a>
-                </li>
-                <li class="nav1-item CCDS">
+                </span>
+                <span class="nav1-item CCDS">
                     <a id="idCCDS2" class="nav-link1" href="cDeluxe.html">Deluxe</a>
-                </li>
-                <li class="nav1-item CCDS">
+                </span>
+                <span class="nav1-item CCDS">
                     <a id="idCCDS3" class="nav-link1" href="cSuite.html">Suite</a>
-                </li>
+                </span>
             </div>
-        </ul>
+        </div>
     </section>
 
     <section class="container Classique">
@@ -156,7 +156,8 @@
                         <span> King size</span>
                     </div>
                 </div>
-                <button type="button" onclick="fDetail()" id="btnDetail" class="offset-4 mt-5">Détails</button>
+                <button type="button" onclick="fDetail()" id="btnDetail"
+                    class="offset-4 mt-5 btn-primary">Détails</button>
             </div>
             <div id="detailClas" class="container">
                 <div class="row details">
@@ -191,9 +192,7 @@
                         <p class="descrip">Tarif</p>
                         <p class="zoom11"> ---€</p>
                     </div>
-
-                    <button type="button" class="offset-5 mt-5"><a href="reservation.html">Réservation<a
-                                href="reservation.html"></a></button>
+                    <button type="button" id="btnReserv1" class="offset-5 mt-5 btn-primary">Réservation</button>
                 </div>
             </div>
         </div>
@@ -228,7 +227,8 @@
                         <span> King size</span>
                     </div>
                 </div>
-                <button type="button" onclick="fDetail1()" id="btnDetail1" class="offset-4 mt-5">Détails</button>
+                <button type="button" onclick="fDetail1()" id="btnDetail1"
+                    class="offset-4 mt-5 btn-primary">Détails</button>
             </div>
             <div id="detailClas1" class="container">
                 <div class="row details">
@@ -262,9 +262,7 @@
                         <p class="descrip">Tarif</p>
                         <p class="zoom11"> ---€</p>
                     </div>
-
-                    <button type="button" class="offset-5 mt-5"><a href="reservation.html">Réservation<a
-                                href="reservation.html"></a></button>
+                    <button type="button" id="btnReserv2" class="offset-5 mt-5 btn-primary">Réservation</button>
                 </div>
             </div>
         </div>
@@ -302,7 +300,8 @@
                         <span> King size</span>
                     </div>
                 </div>
-                <button type="button" onclick="fDetail2()" id="btnDetail2" class="offset-4 mt-5">Détails</button>
+                <button type="button" onclick="fDetail2()" id="btnDetail2"
+                    class="offset-4 mt-5 btn-primary">Détails</button>
             </div>
             <div id="detailClas2" class="container">
                 <div class="row details">
@@ -337,9 +336,7 @@
                         <p class="descrip">Tarif</p>
                         <p class="zoom11"> ---€</p>
                     </div>
-
-                    <button type="button" class="offset-5 mt-5"><a href="reservation.html">Réservation<a
-                                href="reservation.html"></a></button>
+                    <button type="button" id="btnReserv3" class="offset-5 mt-5 btn-primary">Réservation</button>
                 </div>
             </div>
         </div>

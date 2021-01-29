@@ -141,6 +141,13 @@ footer{
 	#searchInput{
 		max-width: 106px;
 	}
+	/* .navbar{
+		flex-wrap: nowrap;
+	} */
+	/* img{
+		height: 50px;
+		width: 50px;
+	} */
 }
 
 @media all and (max-width : 600px){
@@ -175,12 +182,6 @@ footer{
 	padding-top: 200px;
 	padding-bottom: 100px;
 }
-
-#btnDetail, #btnDetail1, #btnDetail2{
-	background-color:rgb(1, 37, 73);
-	color: white;
-}
-
 .details p{
 	text-align: center;
 }
