@@ -12,6 +12,9 @@
 	src: url("../polices/Aliandra.ttf");
 }
 /**** all ****/
+*{
+	box-sizing: border-box;
+}
 body{
 	margin: 0;
 	font-family: "Cabrion", "Times New Roman", serif;
@@ -144,10 +147,10 @@ footer{
 	/* .navbar{
 		flex-wrap: nowrap;
 	} */
-	/* img{
-		height: 50px;
-		width: 50px;
-	} */
+	/*img{
+		height: auto;
+		width: 100%;
+	}*/
 }
 
 @media all and (max-width : 600px){
@@ -210,8 +213,11 @@ footer{
 	width: 95%;
 	height: 95%;
 }
-
-
+@media all and (max-width : 800px){ 
+.chamberSeparator{
+	display: none;
+}
+}
 /**** mettre en gras les pages chambres ****/
 .infopra{
 	font-weight:700;
@@ -225,9 +231,18 @@ footer{
 }
 .CCDS{
 	font-family: "Soria";
-	font-size: 1em;
-	list-style-type: none;
-	padding: 2%;
+	font-size: 1.9em;
+	color: black;
+	width: 100%;
+}
+.CCDS a{
+	color: black;
+
+}
+.liens{
+	display: block;
+	margin-left: 20%;
+	
 }
 
 /**** contact ****/
