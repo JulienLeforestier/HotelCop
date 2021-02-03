@@ -207,10 +207,8 @@ footer{
 }
 .liens{
 	display: block;
-	margin-left: 20%;
-	
+	margin-left: 20%;	
 }
-
 /**** contact ****/
 .aideForm{
 	margin:40px;
@@ -270,7 +268,7 @@ footer{
 /**** media ****/
 @media all and (max-width : 1024px){
 	#inputDateFrom, #inputDateTo, #fromTo, #chambersNb, #peopleNb, #labelDate, 
-	.photo_reservation{
+	.photo_reservation, .chamberSeparator, .separator{
 		display: none;
 	}
 	#searchInput{
@@ -283,9 +281,6 @@ footer{
 	img.minis{
 		width: auto;
 		height: auto;
-	}
-	.separator{
-		display: none;
 	}
 	.nav-link{
 		font-size: 100%;
