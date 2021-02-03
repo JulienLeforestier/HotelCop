@@ -137,20 +137,16 @@ footer{
 /**** media ****/
 @media all and (max-width : 991px){
 	#inputDateFrom, #inputDateTo, #fromTo, #chambersNb, #peopleNb, #labelDate, 
-	.photo_reservation,
-	#large_img_spa, #large_img_events{
-		display: none;
-	}
-	#searchInput{
-		max-width: 106px;
-	}
-	/* .navbar{
-		flex-wrap: nowrap;
-	} */
-	/*img{
-		height: auto;
-		width: 100%;
-	}*/
+    .photo_reservation{
+        display: none;
+    }
+    #searchInput{
+        max-width: 106px;
+    }
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media all and (max-width : 600px){
