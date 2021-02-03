@@ -12,6 +12,9 @@
 	src: url("../polices/Aliandra.ttf");
 }
 /**** all ****/
+*{
+	box-sizing: border-box;
+}
 body{
 	margin: 0;
 	font-family: "Cabrion", "Times New Roman", serif;
@@ -194,10 +197,20 @@ footer{
 }
 .CCDS{
 	font-family: "Soria";
-	font-size: 1em;
-	list-style-type: none;
-	padding: 2%;
+	font-size: 1.9em;
+	color: black;
+	width: 100%;
 }
+.CCDS a{
+	color: black;
+
+}
+.liens{
+	display: block;
+	margin-left: 20%;
+	
+}
+
 /**** contact ****/
 .aideForm{
 	margin:40px;
