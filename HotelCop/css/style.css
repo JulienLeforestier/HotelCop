@@ -274,7 +274,11 @@ footer{
 	#searchInput{
 		max-width: 106px;
 	}
-	img, iframe{
+	iframe{
+		width: auto;
+		height: auto;
+	}
+	img{
 		width: 100%;
 		height: auto;
 	}
