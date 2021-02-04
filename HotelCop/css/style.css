@@ -94,9 +94,6 @@ iframe{
 }
 #searchBtn{
 	border-radius: 5px;
-} 
-#logo{
-	
 }
 /**** carousel ****/
 .carousel-item{
@@ -269,7 +266,7 @@ footer{
 	padding: 2%;
 }
 /**** media ****/
-@media all and (max-width : 1024px){
+@media all and (max-width : 1280px){
 	#inputDateFrom, #inputDateTo, #fromTo, #chambersNb, #peopleNb, #labelDate, 
 	.photo_reservation, .chamberSeparator, .separator{
 		display: none;
